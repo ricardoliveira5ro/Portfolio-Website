@@ -17,17 +17,30 @@
 
 .navbar {
     font-family: 'Cormorant SC', serif;
+    transition: 0.2s ease;
+    text-decoration: none;
     @apply text-white text-3xl mx-10;
 }
 
+.navbar a {
+    text-decoration: none;
+}
 
+.navbar:hover {
+    border-top: 4px solid #E5C34D;
+    border-bottom: 4px solid #E5C34D;
+}
 
 .mainContent {
     @apply w-full flex pt-8;
 }
 
+.leftDiv {
+    @apply w-1/12;
+}
+
 .articleContent {
-    @apply w-11/12;
+    @apply w-10/12;
 }
 
 .asideContent {
@@ -35,11 +48,31 @@
 }
 
 .socialsList {
-    @apply bg-white px-3 h-fit flex flex-col items-center rounded-l-[20px];
+    @apply bg-white flex flex-col items-center rounded-l-[20px] m-0 p-0;
+    list-style: none;
 }
 
-.socialsList li {
-    @apply py-6 w-fit;
+.socialsList a {
+    @apply px-4 py-6 rounded-l-[20px] w-full;
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+
+.socialsList a:hover {
+    @apply bg-[#E5C34D];
+}
+
+.socialsList a:nth-of-type(1) {
+    @apply px-4 py-6 rounded-bl-[0px] w-full;
+}
+.socialsList a:nth-of-type(2) {
+    @apply px-4 py-6 rounded-l-[0px] w-full;
+}
+.socialsList a:nth-of-type(3) {
+    @apply px-4 py-6 rounded-l-[0px] w-full;
+}
+.socialsList a:nth-of-type(4) {
+    @apply px-4 py-6 rounded-tl-[0px] w-full;
 }
 
 .divContent {
