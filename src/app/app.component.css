@@ -7,40 +7,59 @@
 @tailwind components;
 @tailwind utilities;
 
-.bodyContent {
-    @apply flex flex-col min-h-screen justify-between;
-}
-
 .header {   
     @apply flex justify-between flex-wrap w-full items-center top-0 z-10 p-10;
 }
 
-.navbar {
+.navbar a{
     font-family: 'Cormorant SC', serif;
     transition: 0.2s ease;
     text-decoration: none;
     @apply text-white text-3xl mx-10;
 }
-
-.navbar a {
-    text-decoration: none;
-}
-
-.navbar:hover {
+.navbar a:hover {
     border-top: 4px solid #E5C34D;
     border-bottom: 4px solid #E5C34D;
 }
 
-.mainContent {
+.homeMain {
     @apply w-full flex pt-8;
 }
 
-.leftDiv {
+.homeLeftDiv {
     @apply w-1/12;
 }
 
-.articleContent {
+.homeCenterContent {
     @apply w-10/12;
+}
+
+.homeTextDiv {
+    @apply flex items-center justify-center;
+}
+
+.presentationText {
+    font-family: 'Libre Caslon Text', serif;
+    @apply text-white text-xl;
+}
+
+.nameText {
+    font-family: 'Bebas Neue', cursive;
+    @apply text-[#E5C34D] text-[55px];
+}
+
+.sofwareEngineerText {
+    font-family: 'Iceland', cursive;
+    @apply text-white text-[25px];
+}
+
+.sloganContent {
+    @apply text-center;
+}
+
+.sloganContent p{
+    font-family: 'Bebas Neue', cursive;
+    @apply text-[#626262] text-[45px];
 }
 
 .asideContent {
@@ -75,36 +94,8 @@
     @apply px-4 py-6 rounded-tl-[0px] w-full;
 }
 
-.divContent {
-    @apply flex items-center justify-center;
-}
-
-.presentationText {
-    font-family: 'Libre Caslon Text', serif;
-    @apply text-white text-xl;
-}
-
-.nameText {
-    font-family: 'Bebas Neue', cursive;
-    @apply text-[#E5C34D] text-[55px];
-}
-
-.sofwareEngineerText {
-    font-family: 'Iceland', cursive;
-    @apply text-white text-[25px];
-}
-
-.sloganContent {
-    @apply text-center;
-}
-
-.sloganText {
-    font-family: 'Bebas Neue', cursive;
-    @apply text-[#626262] text-[45px];
-}
-
 .footerContent {
-    @apply flex justify-center py-5 h-fit;
+    @apply flex justify-center pt-28;
 }
 
 
@@ -112,7 +103,7 @@
     @apply flex justify-center;
 }
 
-.footerText {
+.footerContent p{
     font-family: 'Libre Caslon Text', serif;
     @apply text-white;
 }
