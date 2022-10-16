@@ -1,4 +1,14 @@
 /* FIX bottom */
+@media (max-height: 780px) {
+    .homeMain {
+        @apply pt-0;
+    }
+
+    .homeFooter {
+        @apply pt-28;
+    }
+}
+
 @media (max-height: 760px) {
     .homeMain {
         @apply pt-0;
@@ -52,6 +62,36 @@
 
     .homeFooter {
         @apply pt-24;
+    }    
+
+    .homeSlogan p{
+        @apply text-[38px];
+    }
+
+    .homeImg {
+        content: url("../assets/images/general/home_200x200.png")
+    }
+}
+
+@media (max-height: 560px) {
+    .logo {
+        content: url("../assets/images/logo/75x75.png")
+    }
+
+    .navbar a{
+        @apply text-2xl;
+    }
+
+    .header {
+        @apply py-4;
+    }
+
+    .homeMain {
+        @apply pt-8;
+    }
+
+    .homeFooter {
+        @apply pt-20;
     }    
 
     .homeSlogan p{
