@@ -53,16 +53,16 @@
     @apply text-white text-[25px];
 }
 
-.sloganContent {
+.homeSlogan {
     @apply text-center;
 }
 
-.sloganContent p{
+.homeSlogan p{
     font-family: 'Bebas Neue', cursive;
     @apply text-[#626262] text-[45px];
 }
 
-.asideContent {
+.homeSocials {
     @apply w-1/12 flex items-center justify-end;
 }
 
@@ -94,16 +94,15 @@
     @apply px-4 py-6 rounded-tl-[0px] w-full;
 }
 
-.footerContent {
-    @apply flex justify-center pt-28;
+.homeFooter {
+    @apply flex justify-center pt-40;
 }
 
-
-.footerContent a {
+.homeFooter a {
     @apply flex justify-center;
 }
 
-.footerContent p{
+.homeFooter p{
     font-family: 'Libre Caslon Text', serif;
     @apply text-white;
 }
