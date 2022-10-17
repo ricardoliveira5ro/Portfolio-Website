@@ -1,104 +1,126 @@
-/* FIX bottom */
-@media (max-height: 780px) {
-    .homeMain {
-        @apply pt-0;
-    }
 
-    .homeFooter {
-        @apply pt-28;
+/*#region Responsive-bottom*/
+@media (min-width: 1020px) {
+    @media (max-height: 790px){
+        .homeMain {
+            @apply pt-0;
+        }
+    
+        .homeFooter {
+            @apply pt-[26];
+        }
+    }
+    
+    @media (max-height: 760px){
+        .homeMain {
+            @apply pt-0;
+        }
+    
+        .homeFooter {
+            @apply pt-24;
+        }
+    }
+    
+    @media (max-height: 700px){
+        .homeMain {
+            @apply pt-0;
+        }
+    
+        .homeFooter {
+            @apply pt-20;
+        }
+    }
+    
+    @media (max-height: 680px){
+        .homeMain {
+            @apply pt-0;
+        }
+    
+        .homeFooter {
+            @apply pt-20;
+        }
+    
+        .header {
+            @apply py-2;
+        }
+    }
+    
+    @media (max-height: 620px){
+        .logo {
+            content: url("../assets/images/logo/75x75.png")
+        }
+    
+        .navbar a{
+            @apply text-2xl;
+        }
+    
+        .header {
+            @apply py-4;
+        }
+    
+        .homeMain {
+            @apply pt-8;
+        }
+    
+        .homeFooter {
+            @apply pt-24;
+        }    
+    
+        .homeSlogan p{
+            @apply text-[38px];
+        }
+    
+        .homeImg {
+            content: url("../assets/images/general/home_200x200.png")
+        }
+    }
+    
+    @media (max-height: 560px){
+        .logo {
+            content: url("../assets/images/logo/75x75.png")
+        }
+    
+        .navbar a{
+            @apply text-2xl;
+        }
+    
+        .header {
+            @apply py-4;
+        }
+    
+        .homeMain {
+            @apply pt-8;
+        }
+    
+        .homeFooter {
+            @apply pt-20;
+        }    
+    
+        .homeSlogan p{
+            @apply text-[38px];
+        }
+    
+        .homeImg {
+            content: url("../assets/images/general/home_200x200.png")
+        }
     }
 }
 
-@media (max-height: 760px) {
-    .homeMain {
-        @apply pt-0;
-    }
 
-    .homeFooter {
-        @apply pt-24;
-    }
-}
+/*#endregion */
 
-@media (max-height: 700px) {
-    .homeMain {
-        @apply pt-0;
-    }
-
-    .homeFooter {
-        @apply pt-20;
-    }
-}
-
-@media (max-height: 680px) {
-    .homeMain {
-        @apply pt-0;
-    }
-
-    .homeFooter {
-        @apply pt-20;
-    }
-
-    .header {
-        @apply py-2;
-    }
-}
-
-@media (max-height: 620px) {
-    .logo {
-        content: url("../assets/images/logo/75x75.png")
-    }
-
+/*#region Responsive-Width*/
+@media(max-width: 1020px) {
     .navbar a{
-        @apply text-2xl;
+        @apply hidden;
     }
 
-    .header {
-        @apply py-4;
+    .homeSocials {
+        @apply hidden
     }
 
-    .homeMain {
-        @apply pt-8;
-    }
-
-    .homeFooter {
-        @apply pt-24;
-    }    
-
-    .homeSlogan p{
-        @apply text-[38px];
-    }
-
-    .homeImg {
-        content: url("../assets/images/general/home_200x200.png")
+    .navbar button {
+        @apply inline-flex;
     }
 }
-
-@media (max-height: 560px) {
-    .logo {
-        content: url("../assets/images/logo/75x75.png")
-    }
-
-    .navbar a{
-        @apply text-2xl;
-    }
-
-    .header {
-        @apply py-4;
-    }
-
-    .homeMain {
-        @apply pt-8;
-    }
-
-    .homeFooter {
-        @apply pt-20;
-    }    
-
-    .homeSlogan p{
-        @apply text-[38px];
-    }
-
-    .homeImg {
-        content: url("../assets/images/general/home_200x200.png")
-    }
-}
+/*#endregion */

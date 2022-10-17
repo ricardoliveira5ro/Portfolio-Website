@@ -8,7 +8,7 @@
 @tailwind utilities;
 
 .header {   
-    @apply flex justify-between flex-wrap w-full items-center top-0 z-10 p-10;
+    @apply flex justify-between flex-wrap w-full items-center top-0 p-10;
 }
 
 .navbar a{
@@ -20,6 +20,64 @@
 .navbar a:hover {
     border-top: 4px solid #E5C34D;
     border-bottom: 4px solid #E5C34D;
+}
+
+.navbar button {
+    @apply hidden;
+}
+
+.side-menu{
+    @apply fixed z-40 h-screen w-56 bg-[#262828] flex flex-col justify-between;
+}
+
+.side-menu-options {
+    @apply flex items-center;
+}
+
+.side-menu-options ul{
+    @apply flex flex-col items-start w-full pl-7 pt-7;
+}
+
+.side-menu-options a {
+    @apply w-fit mb-5;
+}
+
+.side-menu-options span {
+    font-family: 'Cormorant SC', serif;
+    @apply text-white text-2xl;
+}
+
+.side-menu-options img {
+    @apply inline-flex mr-3 mb-[3px];
+}
+
+.side-menu-socials {
+    @apply flex items-center justify-end pb-10;
+}
+
+.side-menu-socials ul {
+    @apply bg-[#B2B2B2] flex flex-col items-center rounded-l-[20px] m-0 p-0;
+    list-style: none;
+}
+
+.side-menu-socials a {
+    @apply px-4 py-6 rounded-l-[20px] w-full;
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+
+.side-menu-socials a:hover {
+    @apply bg-[#E5C34D];
+}
+
+.side-menu-socials a:nth-of-type(1) {
+    @apply px-4 py-6 rounded-bl-[0px] w-full;
+}
+.side-menu-socials a:nth-of-type(2) {
+    @apply px-4 py-6 rounded-l-[0px] w-full;
+}
+.side-menu-socials a:nth-of-type(3) {
+    @apply px-4 py-6 rounded-tl-[0px] w-full;
 }
 
 .homeMain {
@@ -88,9 +146,6 @@
     @apply px-4 py-6 rounded-l-[0px] w-full;
 }
 .socialsList a:nth-of-type(3) {
-    @apply px-4 py-6 rounded-l-[0px] w-full;
-}
-.socialsList a:nth-of-type(4) {
     @apply px-4 py-6 rounded-tl-[0px] w-full;
 }
 
