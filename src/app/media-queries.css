@@ -109,7 +109,7 @@
 
 /*#endregion */
 
-/*#region Responsive-Width*/
+/*#region Responsive-Width-Home*/
 @media(max-width: 1020px) {
     .navbar a{
         @apply hidden;
@@ -122,5 +122,24 @@
     .navbar button {
         @apply inline-flex;
     }
+}
+
+@media (max-width: 850px){
+    .homeSlogan {
+        @apply hidden;
+    }
+
+    .homeTextDiv {
+        @apply flex flex-col;
+    }
+
+    .homeTextDiv p {
+        @apply text-center
+    }
+/*
+    .homeTextDiv img {
+        content: url("../assets/images/general/home_200x200.png")
+    }
+  */  
 }
 /*#endregion */

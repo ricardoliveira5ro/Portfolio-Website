@@ -81,7 +81,7 @@
 }
 
 .homeMain {
-    @apply w-full flex pt-8;
+    @apply w-full flex pt-8 ;
 }
 
 .homeLeftDiv {
