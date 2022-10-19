@@ -136,10 +136,10 @@
     .homeTextDiv p {
         @apply text-center
     }
-/*
+
     .homeTextDiv img {
-        content: url("../assets/images/general/home_200x200.png")
+        content: url("../assets/images/general/home_200x200_1.png")
     }
-  */  
+  
 }
 /*#endregion */
