@@ -47,19 +47,15 @@
     
     @media (max-height: 620px){
         .logo {
-            content: url("../assets/images/logo/75x75.png")
+            content: url("../assets/images/logo/75w.png")
         }
     
         .navbar a{
             @apply text-2xl;
         }
     
-        .header {
-            @apply py-4;
-        }
-    
         .homeMain {
-            @apply pt-8;
+            @apply pt-0;
         }
     
         .homeFooter {
@@ -69,15 +65,11 @@
         .homeSlogan p{
             @apply text-[38px];
         }
-    
-        .homeImg {
-            content: url("../assets/images/general/home_200x200.png")
-        }
     }
     
-    @media (max-height: 560px){
+    @media (max-height: 600px){
         .logo {
-            content: url("../assets/images/logo/75x75.png")
+            content: url("../assets/images/logo/75w.png")
         }
     
         .navbar a{
@@ -89,19 +81,41 @@
         }
     
         .homeMain {
-            @apply pt-8;
+            @apply pt-0;
         }
     
         .homeFooter {
-            @apply pt-20;
+            @apply pt-16;
         }    
     
         .homeSlogan p{
             @apply text-[38px];
         }
+    }
+
+    @media (max-height: 585px){
+        .logo {
+            content: url("../assets/images/logo/75w.png")
+        }
     
-        .homeImg {
-            content: url("../assets/images/general/home_200x200.png")
+        .navbar a{
+            @apply text-2xl;
+        }
+    
+        .header {
+            @apply py-4;
+        }
+    
+        .homeMain {
+            @apply pt-0;
+        }
+    
+        .homeFooter {
+            @apply pt-10;
+        }    
+    
+        .homeSlogan p{
+            @apply text-[38px];
         }
     }
 }
@@ -125,6 +139,18 @@
 }
 
 @media (max-width: 850px){
+    .logo {
+        content: url("../assets/images/logo/75w.png")
+    }
+
+    .header {
+        @apply py-4;
+    }
+
+    .homeMain {
+        @apply pb-4;
+    }
+
     .homeSlogan {
         @apply hidden;
     }
@@ -138,8 +164,58 @@
     }
 
     .homeTextDiv img {
-        content: url("../assets/images/general/home_200x200_1.png")
+        content: url("../assets/images/general/home_150w.png")
+    }
+
+    .homeTextDiv div{
+        @apply pr-0 pb-4;
     }
   
+    .homeFooter {
+        @apply pt-28;
+    } 
+
+
+    @media (max-height: 710px) {
+        .homeFooter {
+            @apply pt-20;
+        }
+    }
+
+    @media (max-height: 675px) {
+        .homeFooter {
+            @apply pt-12;
+        }
+    }
+
+    @media (max-height: 640px) {
+        .homeFooter {
+            @apply pt-10;
+        }
+
+        .homeMain {
+            @apply pt-5;
+        }
+    }
+
+    @media (max-height: 610px) {
+        .homeFooter {
+            @apply pt-10;
+        }
+
+        .homeMain {
+            @apply pt-0;
+        }
+    }
+
+    @media (max-height: 609px) {
+        .homeFooter {
+            @apply hidden;
+        }
+
+        .homeMain {
+            @apply pt-5;
+        }
+    }
 }
 /*#endregion */

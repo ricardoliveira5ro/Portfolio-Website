@@ -81,7 +81,7 @@
 }
 
 .homeMain {
-    @apply w-full flex pt-8 ;
+    @apply w-full flex pt-10;
 }
 
 .homeLeftDiv {
@@ -94,6 +94,10 @@
 
 .homeTextDiv {
     @apply flex items-center justify-center;
+}
+
+.homeTextDiv div{
+    @apply pr-8;
 }
 
 .presentationText {
@@ -112,7 +116,7 @@
 }
 
 .homeSlogan {
-    @apply text-center;
+    @apply text-center pt-6;
 }
 
 .homeSlogan p{
@@ -158,8 +162,8 @@
 }
 
 .homeFooter p{
-    font-family: 'Libre Caslon Text', serif;
-    @apply text-white;
+    font-family: 'Cormorant SC', serif;
+    @apply text-white text-2xl;
 }
 
 .bounce {
