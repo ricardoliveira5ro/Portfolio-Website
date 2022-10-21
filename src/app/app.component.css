@@ -7,6 +7,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.body {
+    height: 100vh;
+    @apply flex flex-col;
+}
+
 .header {   
     @apply flex justify-between flex-wrap w-full items-center top-0 p-10;
 }
@@ -154,7 +159,7 @@
 }
 
 .homeFooter {
-    @apply flex justify-center pt-40;
+    @apply flex-1 flex justify-center items-end pb-5;
 }
 
 .homeFooter a {
@@ -163,7 +168,7 @@
 
 .homeFooter p{
     font-family: 'Cormorant SC', serif;
-    @apply text-white text-2xl;
+    @apply text-white text-2xl text-center;
 }
 
 .bounce {

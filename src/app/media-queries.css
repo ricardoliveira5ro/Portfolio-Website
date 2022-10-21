@@ -1,130 +1,26 @@
+@media (max-height: 700px) and (min-width: 860px){
+    .header {
+        @apply py-3;
+    }
 
-/*#region Responsive-bottom*/
-@media (min-width: 1020px) {
-    @media (max-height: 790px){
+    @media (max-height: 640px){
         .homeMain {
-            @apply pt-0;
-        }
-    
-        .homeFooter {
-            @apply pt-[26];
-        }
-    }
-    
-    @media (max-height: 760px){
-        .homeMain {
-            @apply pt-0;
-        }
-    
-        .homeFooter {
-            @apply pt-24;
-        }
-    }
-    
-    @media (max-height: 700px){
-        .homeMain {
-            @apply pt-0;
-        }
-    
-        .homeFooter {
-            @apply pt-20;
-        }
-    }
-    
-    @media (max-height: 680px){
-        .homeMain {
-            @apply pt-0;
-        }
-    
-        .homeFooter {
-            @apply pt-20;
-        }
-    
-        .header {
-            @apply py-2;
-        }
-    }
-    
-    @media (max-height: 620px){
-        .logo {
-            content: url("../assets/images/logo/75w.png")
-        }
-    
-        .navbar a{
-            @apply text-2xl;
-        }
-    
-        .homeMain {
-            @apply pt-0;
-        }
-    
-        .homeFooter {
-            @apply pt-24;
-        }    
-    
-        .homeSlogan p{
-            @apply text-[38px];
-        }
-    }
-    
-    @media (max-height: 600px){
-        .logo {
-            content: url("../assets/images/logo/75w.png")
-        }
-    
-        .navbar a{
-            @apply text-2xl;
-        }
-    
-        .header {
-            @apply py-4;
-        }
-    
-        .homeMain {
-            @apply pt-0;
-        }
-    
-        .homeFooter {
-            @apply pt-16;
-        }    
-    
-        .homeSlogan p{
-            @apply text-[38px];
+            @apply pt-2;
         }
     }
 
-    @media (max-height: 585px){
-        .logo {
-            content: url("../assets/images/logo/75w.png")
-        }
-    
-        .navbar a{
-            @apply text-2xl;
-        }
-    
-        .header {
-            @apply py-4;
-        }
-    
-        .homeMain {
-            @apply pt-0;
-        }
-    
+    @media (max-height: 590px){               
         .homeFooter {
-            @apply pt-10;
-        }    
-    
-        .homeSlogan p{
-            @apply text-[38px];
+            @apply hidden;
+        }
+
+        .homeMain {
+            @apply pt-5;
         }
     }
 }
 
-
-/*#endregion */
-
-/*#region Responsive-Width-Home*/
-@media(max-width: 1020px) {
+@media (max-width: 1020px) {
     .navbar a{
         @apply hidden;
     }
@@ -136,86 +32,48 @@
     .navbar button {
         @apply inline-flex;
     }
-}
 
-@media (max-width: 850px){
     .logo {
         content: url("../assets/images/logo/75w.png")
     }
+}
 
-    .header {
-        @apply py-4;
+@media (max-width: 860px) {
+    .homeTextDiv {
+        @apply flex-col;
     }
 
-    .homeMain {
-        @apply pb-4;
+    .homeTextDiv div{
+        @apply pr-0 pb-5 text-center;
+    }
+
+    .homeImg {
+        content: url("../assets/images/general/home_150w.png")
     }
 
     .homeSlogan {
         @apply hidden;
     }
 
-    .homeTextDiv {
-        @apply flex flex-col;
-    }
-
-    .homeTextDiv p {
-        @apply text-center
-    }
-
-    .homeTextDiv img {
-        content: url("../assets/images/general/home_150w.png")
-    }
-
-    .homeTextDiv div{
-        @apply pr-0 pb-4;
-    }
-  
-    .homeFooter {
-        @apply pt-28;
-    } 
-
-
-    @media (max-height: 710px) {
-        .homeFooter {
-            @apply pt-20;
-        }
-    }
-
-    @media (max-height: 675px) {
-        .homeFooter {
-            @apply pt-12;
-        }
-    }
-
-    @media (max-height: 640px) {
-        .homeFooter {
-            @apply pt-10;
-        }
-
+    @media (max-height: 720px) {
         .homeMain {
-            @apply pt-5;
+            @apply pt-2;
+        }
+
+        @media (max-height: 660px) {
+            .header {
+                @apply py-3;
+            }            
         }
     }
 
-    @media (max-height: 610px) {
-        .homeFooter {
-            @apply pt-10;
-        }
-
+    @media (max-height: 590px) {
         .homeMain {
-            @apply pt-0;
+            @apply pt-6;
         }
-    }
 
-    @media (max-height: 609px) {
         .homeFooter {
             @apply hidden;
         }
-
-        .homeMain {
-            @apply pt-5;
-        }
     }
 }
-/*#endregion */
