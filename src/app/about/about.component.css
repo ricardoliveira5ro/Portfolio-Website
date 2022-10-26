@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.about {
+    @apply flex flex-col min-h-[var(--app-height)];
+}
+
+.topDiv {
+    @apply flex border;
+}
+
+.topLeft {
+    @apply w-1/3 flex flex-col items-center justify-center border
+}
+
+.topRight {
+    @apply w-2/3 border
+}
+
+.profile {
+    @apply flex items-end justify-center pt-6 border
+}
+
+
+
+
+
+.bottomDiv {
+    @apply flex-1 flex justify-center items-end pb-5;
+}
+
+.bottomDiv a {
+    @apply flex justify-center;
+}
+
+.bottomDiv p{
+    font-family: 'Cormorant SC', serif;
+    @apply text-white text-2xl text-center;
+}
+
+.bounce {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.bottomLeft {
+    @apply w-1/12; 
+}
+

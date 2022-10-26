@@ -34,7 +34,7 @@
     }
 
     .logo {
-        content: url("../assets/images/logo/75w.png")
+        content: url("../../assets/images/logo/75w.png")
     }
 }
 
@@ -48,7 +48,7 @@
     }
 
     .homeImg {
-        content: url("../assets/images/general/home_150w.png")
+        content: url("../../assets/images/general/home_150w.png")
     }
 
     .homeSlogan {
