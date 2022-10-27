@@ -5,7 +5,7 @@
 */
 
 .about {
-    @apply flex flex-col min-h-[var(--app-height)];
+    @apply flex flex-col min-h-[var(--app-height)] border;
 }
 
 .topDiv {
