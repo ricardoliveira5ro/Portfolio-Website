@@ -1,43 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
-
-
+/*
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*/
 
 .about {
     @apply flex flex-col min-h-[var(--app-height)];
 }
 
 .topDiv {
-    @apply flex border;
+    @apply flex pt-24;
 }
 
-.topLeft {
-    @apply w-1/3 flex flex-col items-center justify-center border
+.topDivLeft {
+    @apply flex justify-center items-center w-1/3;
 }
 
-.topRight {
-    @apply w-2/3 border
+.topDivLeft p {
+    font-family: 'Bebas Neue', cursive;
+    @apply text-[#E5C34D] text-[55px];
 }
 
-.profile {
-    @apply flex items-end justify-center pt-6 border
+.midDiv {
+    @apply flex flex-1 pt-10;
 }
 
+.midLeft {
+    @apply w-1/3 flex flex-col items-center;
+}
 
+.profilePic {
+    @apply flex items-end justify-center pt-6 px-6 bg-[#9D9D9D] rounded-[32px];
+}
 
+.age {
+    font-family: 'Libre Caslon Text', serif;
+    @apply text-white text-2xl pt-7 pb-4;
+}
 
+.midRight {
+    @apply w-2/3 flex flex-col pr-24;
+}
+
+.midRight p {
+    font-family: 'Libre Caslon Text', serif;
+    @apply text-white text-xl text-justify pb-8;
+}
+
+.spanYellow {
+    @apply text-[#E5C34D]
+}
+
+.spanBlue {
+    @apply text-[#00B0FB]
+}
+
+.spanRed {
+    @apply text-red-600
+}
+
+.spanGreen {
+    @apply text-[#32EE9F]
+}
 
 .bottomDiv {
-    @apply flex-1 flex justify-center items-end pb-5;
+    @apply flex justify-center items-end pb-5 ;
 }
 
-.bottomDiv a {
+.bottomMid {
+    @apply w-10/12; 
+}
+
+.bottomLeft {
+    @apply w-1/12; 
+}
+
+.bottomRight {
+    @apply w-1/12 flex justify-center; 
+}
+
+.bottomRight a{
+    @apply flex flex-col items-center; 
+}
+
+.bottomRight p{
+    font-family: 'Cormorant SC', serif;
+    @apply text-[#E5C34D] text-xl pt-2;
+}
+
+.bottomMid a {
     @apply flex justify-center;
 }
 
-.bottomDiv p{
+.bottomMid p{
     font-family: 'Cormorant SC', serif;
     @apply text-white text-2xl text-center;
 }
@@ -55,7 +110,9 @@
     100% { transform: translateY(0); }
 }
 
-.bottomLeft {
-    @apply w-1/12; 
-}
+
+
+
+
+
 

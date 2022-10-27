@@ -1,12 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+SC&family=Libre+Caslon+Text&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+SC&family=Iceland&family=Libre+Caslon+Text&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .home {
     @apply flex flex-col h-[var(--app-height)];
 }
