@@ -21,6 +21,10 @@
     @apply text-[#E5C34D] text-[55px];
 }
 
+.topDivRight {
+    @apply w-2/3;
+}
+
 .midDiv {
     @apply flex flex-1 items-center pb-4;
 }

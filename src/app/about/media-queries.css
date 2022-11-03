@@ -69,3 +69,59 @@
         }
     }
 }
+
+@media (max-width: 860px) {
+    .topDiv {
+        @apply flex pt-3;
+    }
+
+    .topDivRight {
+        @apply hidden;
+    }
+
+    .topDivLeft {
+        @apply w-full;
+    }
+
+    .topDivLeft p {
+        @apply text-[40px];
+    }
+
+    .midCenter{
+        @apply flex-col items-center;
+    }
+
+    .midLeft {
+        @apply w-full pb-6;
+    }
+
+    .profilePic img {
+        content: url("../../assets/images/general/profile_200w.png");
+    } 
+
+    .flag {
+        content: url("../../assets/images/general/portugal_32w.png");
+    }
+
+    .age {
+        @apply pt-3 pb-0 text-base;
+    }
+
+    .midRight {
+        @apply w-full px-7;
+    }
+
+    .midRight p {
+        @apply pb-4 text-base text-center;
+    }
+
+    @media (max-height: 780px) {
+        .topDivLeft p {
+            @apply text-[37px];
+        }
+
+        .profilePic img {
+            content: url("../../assets/images/general/profile_175w.png");
+        } 
+    }
+}
