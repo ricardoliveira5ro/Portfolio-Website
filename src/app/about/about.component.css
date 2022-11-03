@@ -22,7 +22,11 @@
 }
 
 .midDiv {
-    @apply flex flex-1 pt-8;
+    @apply flex flex-1 items-center pb-4;
+}
+
+.midCenter {
+    @apply flex;
 }
 
 .midLeft {
@@ -30,8 +34,7 @@
 }
 
 .profilePic {
-    /*@apply flex items-end justify-center pt-6 px-6 bg-[#9D9D9D] rounded-[32px];*/
-    @apply flex items-end justify-center pt-0 px-0;
+    @apply flex items-end justify-center;
 }
 
 .profilePic img {
@@ -69,7 +72,7 @@
 }
 
 .bottomDiv {
-    @apply flex justify-center items-end pb-5 ;
+    @apply flex justify-center items-end pb-5;
 }
 
 .bottomMid {
