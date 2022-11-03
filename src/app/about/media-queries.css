@@ -1,0 +1,136 @@
+@media (min-width: 1300px) {
+    @media (max-height: 750px) {
+        .profilePic img {
+            content: url("../../assets/images/general/profile_250w.png");
+        }
+    }
+
+    @media (max-height: 670px) {
+        .topDiv {
+            @apply pt-4;
+        }
+
+        .midDiv {
+            @apply pt-4;
+        }
+    }
+
+    @media (max-height: 630px) {
+        .topDiv {
+            @apply pt-6;
+        }
+
+        .profilePic img {
+            content: url("../../assets/images/general/profile_200w.png");
+        }
+
+        .midRight p {
+            @apply text-lg pb-6;
+        }
+
+        .topDivLeft p {
+            @apply text-[45px];
+        }
+    }
+
+    @media (max-height: 560px) {
+        .topDiv {
+            @apply pt-4;
+        }
+
+        .flag {
+            content: url("../../assets/images/general/portugal_40w.png");
+        }
+
+        .bottomDiv {
+            @apply hidden;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .profilePic img {
+        content: url("../../assets/images/general/profile_250w.png");
+    }
+
+    .midRight p {
+        @apply text-lg pb-6;
+    }
+
+    @media (max-height: 700px) {
+        .topDiv {
+            @apply pt-4;
+        }
+
+        .midDiv {
+            @apply pt-4;
+        }
+    }
+
+    @media (max-height: 650px) {
+        .topDiv {
+            @apply pt-2;
+        }
+
+        .midDiv {
+            @apply pt-2;
+        }
+
+        .age {
+            @apply pt-4 pb-0;
+        }
+
+        .topDivLeft p {
+            @apply text-[45px];
+        }
+    }
+
+    @media (max-height: 570px) {
+        .bottomDiv {
+            @apply hidden;
+        }
+    }
+
+
+    @media (max-width: 1200px) {
+        .midRight {
+            @apply pr-16;
+        }
+    }
+
+    @media (max-width: 1105px) {
+        .topDivLeft p {
+            @apply text-[45px];
+        }
+
+        .midRight p {
+            @apply text-[17px] pb-6;
+        }
+    }
+
+    @media (max-width: 1040px) {
+        .midRight p {
+            @apply text-base pb-6;
+        }
+    }
+
+    @media (max-width: 1010px) {
+        .profilePic img {
+            content: url("../../assets/images/general/profile_200w.png");
+        }
+
+        .flag {
+            content: url("../../assets/images/general/portugal_40w.png");
+        }
+
+        .topDivLeft p {
+            @apply text-[36px];
+        }
+    }
+}
+
+@media (max-width: 860px) and (max-height: 590px){
+    .bottomDiv {
+        @apply hidden;
+    }
+}

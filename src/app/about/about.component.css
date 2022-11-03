@@ -5,11 +5,11 @@
 */
 
 .about {
-    @apply flex flex-col min-h-[var(--app-height)] border;
+    @apply flex flex-col min-h-[var(--app-height)];
 }
 
 .topDiv {
-    @apply flex pt-24;
+    @apply flex pt-8;
 }
 
 .topDivLeft {
@@ -22,7 +22,7 @@
 }
 
 .midDiv {
-    @apply flex flex-1 pt-10;
+    @apply flex flex-1 pt-8;
 }
 
 .midLeft {
@@ -30,12 +30,17 @@
 }
 
 .profilePic {
-    @apply flex items-end justify-center pt-6 px-6 bg-[#9D9D9D] rounded-[32px];
+    /*@apply flex items-end justify-center pt-6 px-6 bg-[#9D9D9D] rounded-[32px];*/
+    @apply flex items-end justify-center pt-0 px-0;
+}
+
+.profilePic img {
+    @apply rounded-[32px];
 }
 
 .age {
     font-family: 'Libre Caslon Text', serif;
-    @apply text-white text-2xl pt-7 pb-4;
+    @apply text-white text-xl pt-7 pb-4;
 }
 
 .midRight {

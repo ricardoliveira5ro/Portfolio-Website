@@ -4,7 +4,7 @@ import * as moment from 'moment';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: ['./about.component.css', './media-queries.css']
 })
 export class AboutComponent implements OnInit {
 
