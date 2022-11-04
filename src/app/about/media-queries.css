@@ -108,11 +108,20 @@
     }
 
     .midRight {
-        @apply w-full px-7;
+        @apply hidden;
     }
 
-    .midRight p {
-        @apply pb-4 text-base text-center;
+    .shortAbout {
+        @apply flex w-full flex-col px-7;
+    }
+
+    .midDiv{
+        @apply justify-center;
+    }
+
+    .shortAbout p {
+        font-family: 'Libre Caslon Text', serif;
+        @apply text-white pb-4 text-base text-center;
     }
 
     @media (max-height: 780px) {
@@ -123,5 +132,17 @@
         .profilePic img {
             content: url("../../assets/images/general/profile_175w.png");
         } 
+    }
+
+    @media (max-height: 635px) {
+        .bottomDiv {
+            @apply hidden;
+        }
+    }
+    
+    @media (max-width: 715px) {
+        .bottomDiv {
+            @apply hidden;
+        }
     }
 }

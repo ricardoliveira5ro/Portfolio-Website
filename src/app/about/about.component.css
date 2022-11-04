@@ -50,6 +50,10 @@
     @apply text-white text-xl pt-7 pb-4;
 }
 
+.shortAbout {
+    @apply hidden;
+}
+
 .midRight {
     @apply w-2/3 flex flex-col pr-24;
 }
