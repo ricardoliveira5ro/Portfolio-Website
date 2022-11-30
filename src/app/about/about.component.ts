@@ -8,7 +8,11 @@ import * as moment from 'moment';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  nextSection: string;
+
+  constructor() { 
+    this.nextSection = "Contacts"
+  }
 
   ngOnInit(): void {
   }

@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Certification } from './certification.class';
-import { Experience, ExperienceType } from './experience.class';
+import { Certification } from '../models/certification.class';
+import { Experience, ExperienceType } from '../models/experience.class';
 
 @Injectable({
   providedIn: 'root'
