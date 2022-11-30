@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Certification } from './certification.class';
-import { ExperienceDataService } from './experience-data.service';
-import { Experience, ExperienceType } from './experience.class';
+import { Certification } from '../models/certification.class';
+import { ExperienceDataService } from '../services/experience-data.service';
+import { Experience, ExperienceType } from '../models/experience.class';
 
 @Component({
   selector: 'app-experience',
@@ -13,9 +13,12 @@ export class ExperienceComponent implements OnInit {
   experienceList: Experience[];
   certificationList: Certification[];
 
+  nextSection: string;
+
   constructor(private service: ExperienceDataService) {
     this.experienceList = this.service.getExperienceList();
     this.certificationList = this.service.getCertificationsList();
+    this.nextSection = "Projects"
   }
 
   ngOnInit(): void {
