@@ -44,3 +44,9 @@
     50%  { transform: translateY(-20px); }
     100% { transform: translateY(0); }
 }
+
+@media (max-width: 720px) {
+    .bottomRight {
+        @apply pr-6;
+    }
+}

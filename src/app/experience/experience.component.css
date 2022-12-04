@@ -17,15 +17,15 @@
 
 .line {
     width: 90%;
-    @apply hidden sm:flex bg-gray-200 h-0.5 ;
+    @apply flex bg-gray-200 h-0.5 ;
 }
 
 .timeline ol {
-    @apply sm:flex;
+    @apply flex;
 }
 
 .timeline li {
-    @apply relative mb-6 sm:mb-0 py-6 px-3;
+    @apply relative py-6 px-2;
 }
 
 .timelineDesign {
@@ -33,11 +33,11 @@
 }
 
 .ringIcon {
-    @apply flex z-10 justify-center items-center w-7 h-7 rounded-full ring-white sm:ring-8 bg-white;
+    @apply flex z-10 justify-center items-center w-11 h-11 rounded-full ring-white bg-white;
 }
 
 .timelineText {
-    @apply mt-5 sm:pr-8;
+    @apply mt-5 pr-8;
 }
 
 .timelineText h3 {
