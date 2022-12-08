@@ -50,3 +50,9 @@
         @apply pr-6;
     }
 }
+
+@media (max-width: 600px) {
+    .bottomRight a {
+        @apply hidden;
+    }
+}
