@@ -1,3 +1,32 @@
 <section id="Projects" class="projects">
-
+    <div class="projectsTitle">
+        <h1>Projects</h1>
+    </div>
+    <div class="projectsDiv">
+        <ol>
+            <li *ngFor="let project of projectsList">
+                <a *ngIf="project.listable" href="">
+                    <div class="projectCard">
+                        <div class="cardImage">
+                            <!-- 1920x1080 for consistent image card -->
+                            <img src='{{ project.imageURL }}' alt="Project Cover">
+                        </div>
+                        <div class="cardInfo">
+                            <p>{{ project.title }}</p>
+                        </div>
+                    </div>
+                </a>
+                <div *ngIf="!project.listable" class="projectCard">
+                    <div class="cardImage">
+                        <!-- 1920x1080 for consistent image card -->
+                        <img src='{{ project.imageURL }}' alt="Project Cover">
+                    </div>
+                    <div class="cardInfo">
+                        <p>{{ project.title }}</p>
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <app-scroll-down [nextSection]="nextSection"></app-scroll-down>
 </section>

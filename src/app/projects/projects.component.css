@@ -1,4 +1,49 @@
 .projects {
-    @apply flex flex-col min-h-[var(--app-height)] border;
+    @apply flex flex-col min-h-[var(--app-height)];
 }
 
+.projectsTitle {
+    @apply flex py-8 px-8 justify-center;
+}
+
+.projectsTitle h1 {
+    font-family: 'Bebas Neue', cursive;
+    @apply text-[#E5C34D] text-5xl;
+}
+
+.projectsDiv {
+    @apply flex flex-1 py-4;
+}
+
+.projectsDiv ol {
+    @apply flex flex-wrap w-full justify-center;
+}
+
+.projectsDiv li {
+    @apply flex h-fit px-6 pb-8;
+    transition: all .2s ease-in-out;
+}
+
+.projectsDiv li:hover {
+    transform: scale(1.1);
+}
+
+.projectCard {
+    @apply max-w-[600px] rounded-xl border-[1px] bg-[#282a2b];
+}
+
+.cardImage {
+    @apply border-b-[1px];
+}
+
+.cardImage img{
+    @apply rounded-t-xl;
+}
+
+.cardInfo {
+    @apply p-3
+}
+
+.cardInfo p{
+    @apply text-white
+}
