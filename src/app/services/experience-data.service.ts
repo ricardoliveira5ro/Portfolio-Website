@@ -6,7 +6,7 @@ import { Experience, ExperienceType } from '../models/experience.class';
 
 @Injectable({
   providedIn: 'root'
-})
+}) 
 export class ExperienceDataService {
 
   constructor(private client: HttpClient){}
