@@ -10,6 +10,7 @@ import { ExperienceDataService } from './services/experience-data.service'
 import { HttpClientModule, HttpHeaders } from '@angular/common/http';
 import { ScrollDownComponent } from './scroll-down/scroll-down.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ProjectsDetailComponent } from './projects-detail/projects-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ProjectsComponent } from './projects/projects.component';
     ExperienceComponent,
     ScrollDownComponent,
     ProjectsComponent,
+    ProjectsDetailComponent,
   ],
   imports: [
     BrowserModule,
