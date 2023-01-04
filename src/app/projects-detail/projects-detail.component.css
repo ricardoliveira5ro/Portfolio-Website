@@ -38,7 +38,7 @@
 }
 
 .content-bottom {
-    @apply flex w-full pt-10 px-12;
+    @apply flex w-full py-10 px-12;
 }
 
 .demo-code {
