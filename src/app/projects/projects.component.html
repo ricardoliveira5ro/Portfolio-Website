@@ -5,7 +5,7 @@
     <div class="projectsDiv">
         <ol>
             <li *ngFor="let project of projectsList">
-                <a *ngIf="project.listable" href="">
+                <a *ngIf="project.listable" (click)="selectedProject(project.id)">
                     <div class="projectCard">
                         <div class="cardImage">
                             <!-- 1920x1080 for consistent image card -->

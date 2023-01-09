@@ -58,22 +58,22 @@
 }
 
 .technologies {
-    @apply flex flex-col;
+    @apply flex flex-col items-center;
 }
 
 .technologies ol {
-    @apply flex flex-row justify-center;
+    @apply flex flex-row;
 }
 
 .technologies li {
-    @apply flex flex-col items-center px-1.5;
+    @apply flex flex-col px-1.5 items-center;
 }
 
 .technologies img {
-    @apply flex w-fit max-w-[35px];
+    @apply flex w-fit max-w-[30px];
 }
 
 .technologies span {
     font-family: 'Montserrat', sans-serif;
-    @apply text-white text-sm;
+    @apply text-white text-[13px];
 }

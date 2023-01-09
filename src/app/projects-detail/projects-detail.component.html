@@ -2,45 +2,31 @@
     <div class="content-detail">
         <div class="content-top">
             <div class="overview">
-                <h1>Portfolio WEBSITE</h1>
+                <h1>{{ activatedProject.name }}</h1>
                 <h3 class="sub-title">Overview</h3>
-                <p>My portfolio website designed to portray an interactive résumé summarizing my personal projects and
-                    experience.</p>
-                <p>I used Figma as a prototyping tool in the early stages to define requirements and design the
-                    application style.</p>
-                <p>To build the website I chose to implement Angular framework for a single-page client application,
-                    splitting the code into components to increase speed
-                    and performance. Also used Tailwind to simplify CSS usage and keep style files small.
-                </p>
-                <p>Embraced a services-data approach for easier maintenance and dynamic data.</p>
-                <p>The source code is available on my GitHub repository, which I used for version control and to host
-                    the website early on.</p>
+                <p *ngFor="let paragraph of activatedProject.description">{{ paragraph }}</p>
             </div>
             <div class="cardImage">
-                <img src="../../assets/images/projects/site.png" alt="Project Cover">
+                <img src='{{ activatedProject.imageURL }}' alt="Project Cover">
             </div>
         </div>
         <div class="content-bottom">
             <div class="demo-code">
                 <h3 class="sub-title">Demo & Source Code</h3>
                 <div>
-                    <button type="button" class="demo">Live Demo</button>
-                    <button type="button" class="code">
+                    <a class="demo" href="https://ricardoliveira5ro.github.io/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    <a class="code" href="https://github.com/ricardoliveira5ro/ricardoliveira5ro.github.io" target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-github"></i>
                         Repository
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="technologies">
                 <h3 class="sub-title">Technologies</h3>
                 <ol>
-                    <li>
-                        <img src="../../assets/images/technologies/angular.png" alt="Angular">
-                        <span>Angular</span>
-                    </li>
-                    <li>
-                        <img src="../../assets/images/technologies/tailwindcss.png" alt="TailwindCSS">
-                        <span>Tailwind</span>
+                    <li *ngFor="let tech of activatedProject.technologies">
+                        <img src='{{tech.imageURL}}' alt='{{tech.title}}'>  
+                        <span>{{tech.title}}</span>
                     </li>
                 </ol>
             </div>

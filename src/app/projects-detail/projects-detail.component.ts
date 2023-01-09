@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Project } from '../models/project.class';
+import { ProjectsDataService } from '../services/projects-data.service';
 
 @Component({
   selector: 'app-projects-detail',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsDetailComponent implements OnInit {
 
-  constructor() { }
+  activatedProject: Project;
+
+  constructor(private route: ActivatedRoute, private service: ProjectsDataService) { }
 
   ngOnInit(): void {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.activatedProject = this.service.getProjectById(id);
   }
 
 }

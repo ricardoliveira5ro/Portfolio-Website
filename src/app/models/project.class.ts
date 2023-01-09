@@ -4,12 +4,12 @@ export class Project {
     id: number;
     name: string;
     title: string;
-    description: string;
+    description: string[];
     imageURL: string;
     technologies: Technology[];
     listable: boolean;
 
-    constructor(id: number, name: string, title: string, description: string, imageURL: string, technologies: Technology[], listable: boolean) {
+    constructor(id: number, name: string, title: string, description: string[], imageURL: string, technologies: Technology[], listable: boolean) {
         this.id = id;
         this.name = name;
         this.title = title;
