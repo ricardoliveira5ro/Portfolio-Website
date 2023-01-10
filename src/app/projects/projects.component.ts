@@ -22,7 +22,8 @@ export class ProjectsComponent implements OnInit {
   }
 
   selectedProject(id: number) {
-    this.router.navigate(['/project', id]);
+    this.router.navigate(['/project-detail', id]);
+    //this.router.navigate(['/project-detail'], { queryParams: { name: name } });
   }
 
 }
