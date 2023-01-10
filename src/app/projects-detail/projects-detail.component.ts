@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Project } from '../models/project.class';
 import { ProjectsDataService } from '../services/projects-data.service';
+
 
 @Component({
   selector: 'app-projects-detail',
@@ -12,11 +13,18 @@ export class ProjectsDetailComponent implements OnInit {
 
   activatedProject: Project;
 
-  constructor(private route: ActivatedRoute, private service: ProjectsDataService) { }
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, private service: ProjectsDataService) { }
 
   ngOnInit(): void {
-    const id = +this.route.snapshot.paramMap.get('id');
+    let id = +this.activatedRoute.snapshot.paramMap.get('id');
     this.activatedProject = this.service.getProjectById(id);
+
+    //Manually URL id doesnt match
+    if(this.isProjectInvalid())
+      this.router.navigate(['**'])
   }
 
+  isProjectInvalid() {
+    return this.activatedProject === undefined;
+  }
 }

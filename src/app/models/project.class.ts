@@ -1,6 +1,7 @@
 import { Technology } from "./technology.class";
 
 export class Project {
+    [x: string]: any;
     id: number;
     name: string;
     title: string;

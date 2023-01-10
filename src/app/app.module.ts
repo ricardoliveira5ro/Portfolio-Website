@@ -11,6 +11,8 @@ import { HttpClientModule, HttpHeaders } from '@angular/common/http';
 import { ScrollDownComponent } from './scroll-down/scroll-down.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectsDetailComponent } from './projects-detail/projects-detail.component';
+import { ProjectsDataService } from './services/projects-data.service';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,13 +23,14 @@ import { ProjectsDetailComponent } from './projects-detail/projects-detail.compo
     ScrollDownComponent,
     ProjectsComponent,
     ProjectsDetailComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ExperienceDataService],
+  providers: [ExperienceDataService, ProjectsDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
