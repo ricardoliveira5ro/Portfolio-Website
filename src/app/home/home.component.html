@@ -1,32 +1,24 @@
-<section id="homeSection" class="home">
-    <header class="header">
-        <img class="logo" src="../../assets/images/logo/100w.png" alt="Ricardo's Logo">
-        <nav class="navbar">
-            <a href="#ExperienceSection">Experience</a>
-            <a href="#Projects">Projects</a>            
-            <a href="#About">About</a>
-            <a href="#Contacts">Contacts</a>
-            <button type="button" data-drawer-target="side-menu" data-drawer-show="side-menu"
-                data-drawer-placement="right" aria-controls="side-menu"><img
-                    src="../../assets/images/icons/menu.png"></button>
-        </nav>
-        <div id="side-menu" class="side-menu" tabindex="-1">
+<section id="homeSection" class="home" (click)="closeModal($event)">
+    <div id="side" class="side">
+        <div class="side-menu slide-left">
             <div class="side-menu-options">
-                <ul>                    
-                    <a href="#">
-                        <li><img src="../../assets/images/icons/right-arrow.png" alt="List bullet"><span>Experience</span>
+                <ul>
+                    <a (click)="goToSection(1)">
+                        <li><img src="../../assets/images/icons/right-arrow.png"
+                                alt="List bullet"><span>Experience</span>
                         </li>
                     </a>
-                    <a href="#">
+                    <a (click)="goToSection(2)">
                         <li><img src="../../assets/images/icons/right-arrow.png" alt="List bullet"><span>Projects</span>
                         </li>
                     </a>
-                    <a href="#">
+                    <a (click)="goToSection(3)">
                         <li><img src="../../assets/images/icons/right-arrow.png" alt="List bullet"><span>Contacts</span>
                         </li>
                     </a>
-                    <a href="#">
-                        <li><img src="../../assets/images/icons/right-arrow.png" alt="List bullet"><span>About</span></li>
+                    <a (click)="goToSection(4)">
+                        <li><img src="../../assets/images/icons/right-arrow.png" alt="List bullet"><span>About</span>
+                        </li>
                     </a>
                 </ul>
             </div>
@@ -44,6 +36,17 @@
                 </ul>
             </div>
         </div>
+    </div>
+    <header class="header">
+        <img class="logo" src="../../assets/images/logo/100w.png" alt="Ricardo's Logo">
+        <nav class="navbar">
+            <a (click)="goToSection(1)">Experience</a>
+            <a (click)="goToSection(2)">Projects</a>
+            <a (click)="goToSection(3)">About</a>
+            <a (click)="goToSection(4)">Contacts</a>
+
+            <button type="button" (click)="sideMenu()"><img src="../../assets/images/icons/menu.png"></button>
+        </nav>
     </header>
     <main class="homeMain">
         <div class="homeLeftDiv"></div>
@@ -77,9 +80,7 @@
     <footer class="homeFooter">
         <div class="bounce">
             <p>Experience</p>
-            <a href="#ExperienceSection"><img src="../../assets/images/icons/down-arrow.png" alt="Scroll Down"></a>
+            <a (click)="nextSection()"><img src="../../assets/images/icons/down-arrow.png" alt="Scroll Down"></a>
         </div>
     </footer>
 </section>
-<app-experience></app-experience>
-<app-projects></app-projects>

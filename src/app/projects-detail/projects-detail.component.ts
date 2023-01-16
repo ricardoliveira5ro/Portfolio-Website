@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { FadeIn } from '../app.routing.animation';
 import { Project } from '../models/project.class';
 import { ProjectsDataService } from '../services/projects-data.service';
 
@@ -7,7 +8,8 @@ import { ProjectsDataService } from '../services/projects-data.service';
 @Component({
   selector: 'app-projects-detail',
   templateUrl: './projects-detail.component.html',
-  styleUrls: ['./projects-detail.component.css', './media-queries.css']
+  styleUrls: ['./projects-detail.component.css', './media-queries.css'],
+  animations: [FadeIn(500, true)]
 })
 export class ProjectsDetailComponent implements OnInit {
 

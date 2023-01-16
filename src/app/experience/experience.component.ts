@@ -1,24 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Certification } from '../models/certification.class';
 import { ExperienceDataService } from '../services/experience-data.service';
 import { Experience, ExperienceType } from '../models/experience.class';
+import { Router } from '@angular/router';
+import { FadeIn } from '../app.routing.animation';
 
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.css', './media-queries.css']
+  styleUrls: ['./experience.component.css', './media-queries.css'],
+  animations: [FadeIn(500, true)]
 })
 export class ExperienceComponent implements OnInit {
 
   experienceList: Experience[];
   certificationList: Certification[];
 
-  nextSection: string;
-
-  constructor(private service: ExperienceDataService) {
+  constructor(private service: ExperienceDataService, private router: Router) {
     this.experienceList = this.service.getExperienceList();
     this.certificationList = this.service.getCertificationsList();
-    this.nextSection = "Projects"
   }
 
   ngOnInit(): void {
@@ -44,6 +44,20 @@ export class ExperienceComponent implements OnInit {
         a.click();
         URL.revokeObjectURL(objectUrl);
       })
+  }
+
+  nextSection() {
+    this.router.navigate(['projects']);
+  }
+
+  home() {
+    //this.router.navigate(['']);
+  }
+
+  
+  @HostListener('window:popstate', ['$event'])
+  onPopState(event) {    
+    this.router.navigate(['']);
   }
 
 }

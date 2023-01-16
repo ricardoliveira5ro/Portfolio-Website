@@ -5,29 +5,15 @@ import {
     style,
     animate,
     group,
-    animateChild
+    animateChild,
+    AnimationTriggerMetadata
 } from '@angular/animations';
 
-export const fadeAnimation = trigger('fadeAnimation', [
-    transition('* => *', [
-        query(':enter', [style({ opacity: 0, position: 'absolute' })], {
-            optional: true,
-        }),
-        query(
-            ':leave',
-            [
-                style({ opacity: 1 }),
-                animate('0.3s', style({ opacity: 0, position: 'absolute' })),
-            ],
-            { optional: true }
-        ),
-        query(
-            ':enter',
-            [
-                style({ opacity: 0 }),
-                animate('0.3s', style({ opacity: 1, position: 'relative' })),
-            ],
-            { optional: true }
-        ),
-    ]),
-]);
+export function FadeIn(timingIn: number, height: boolean = false): AnimationTriggerMetadata {
+    return trigger('fadeIn', [
+        transition(':enter', [
+            style(height ? { opacity: 0, height: 0, } : { opacity: 0, }),
+            animate(timingIn, style(height ? { opacity: 1, height: 'fit-content' } : { opacity: 1, })),
+        ]),
+    ]);
+}
