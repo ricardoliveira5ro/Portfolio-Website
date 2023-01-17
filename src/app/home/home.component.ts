@@ -44,10 +44,12 @@ export class HomeComponent implements OnInit {
   }
 
   sideMenu() {
-    console.log("INNNN");
-    document.getElementById('side').style.display = 'block';
-    document.getElementById('body').style.overflow = 'hidden';
-    this.isModalOpen = true;
+    if(!this.isModalOpen) {
+      console.log("INNNN");
+      document.getElementById('side').style.display = 'block';
+      document.getElementById('body').style.overflow = 'hidden';
+      this.isModalOpen = true;
+    }
   }
 
   closeModal(event) {
