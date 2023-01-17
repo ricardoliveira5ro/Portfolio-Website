@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
   }
 
   nextSection() {
+    console.log("Next")
     this.router.navigate(['experience']);
   }
 

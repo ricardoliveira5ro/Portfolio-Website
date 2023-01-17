@@ -40,11 +40,11 @@
     <header class="header">
         <img class="logo" src="../../assets/images/logo/100w.png" alt="Ricardo's Logo">
         <nav class="navbar">
-            <a class="links" (click)="goToSection(1)">Experience</a>
-            <a class="links" (click)="goToSection(2)">Projects</a>
-            <a class="links" (click)="goToSection(3)">About</a>
-            <a class="links" (click)="goToSection(4)">Contacts</a>
-            <a class="sideMenuBtn" (click)="sideMenu()"><img src="../../assets/images/icons/menu.png"></a>
+            <a (click)="goToSection(1)">Experience</a>
+            <a (click)="goToSection(2)">Projects</a>
+            <a (click)="goToSection(3)">About</a>
+            <a (click)="goToSection(4)">Contacts</a>
+            <button type="button" (click)="sideMenu()"><img src="../../assets/images/icons/menu.png"></button>
         </nav>
     </header>
     <main class="homeMain">
