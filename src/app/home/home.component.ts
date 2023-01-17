@@ -57,6 +57,7 @@ export class HomeComponent implements OnInit {
       console.log("To close")
       document.getElementById('side').style.display = 'none';
       document.getElementById('body').style.overflow = 'auto';
+      this.isModalOpen = false;
     }
   }
 }
