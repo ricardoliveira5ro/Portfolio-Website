@@ -10,19 +10,19 @@ a:hover {
     @apply flex justify-between flex-wrap w-full items-center top-0 p-10;
 }
 
-.navbar a {
+.links {
     font-family: 'Cormorant SC', serif;
     transition: 0.2s ease;
     text-decoration: none;
     @apply text-white text-3xl mx-10;
 }
 
-.navbar a:hover {
+.links:hover {
     border-top: 4px solid #E5C34D;
     border-bottom: 4px solid #E5C34D;
 }
 
-.navbar button {
+.sideMenuBtn {
     @apply hidden;
     -webkit-tap-highlight-color: transparent;
 }

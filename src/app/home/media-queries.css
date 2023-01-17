@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 1020px) {
-    .navbar a{
+    .links{
         @apply hidden;
     }
 
@@ -29,7 +29,7 @@
         @apply hidden
     }
 
-    .navbar button {
+    .sideMenuBtn {
         @apply inline-flex;
     }
 
