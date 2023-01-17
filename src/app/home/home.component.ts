@@ -45,13 +45,14 @@ export class HomeComponent implements OnInit {
 
   sideMenu() {
     console.log("INNNN");
-    document.getElementById('side').style.display = 'inline';
+    document.getElementById('side').style.display = 'block';
     document.getElementById('body').style.overflow = 'hidden';
     this.isModalOpen = true;
   }
 
   closeModal(event) {
     if(+event.clientX < (window.innerWidth - 240) && this.isModalOpen) {
+      console.log("To close")
       document.getElementById('side').style.display = 'none';
       document.getElementById('body').style.overflow = 'auto';
     }

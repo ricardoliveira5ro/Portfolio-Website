@@ -28,7 +28,7 @@ a:hover {
 }
 
 .side {
-    @apply w-60 h-full absolute z-50 right-0
+    @apply w-60 h-full absolute z-50 right-0 hidden
 }
 
 .side-menu {
