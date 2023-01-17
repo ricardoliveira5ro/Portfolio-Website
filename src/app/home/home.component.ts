@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   }
 
   nextSection() {
-    console.log("Next")
+    console.log("Next");
     this.router.navigate(['experience']);
   }
 
@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit {
   }
 
   sideMenu() {
-    console.log("INNNN")
+    console.log("INNNN");
     document.getElementById('side').style.display = 'inline';
     document.getElementById('body').style.overflow = 'hidden';
     this.isModalOpen = true;
