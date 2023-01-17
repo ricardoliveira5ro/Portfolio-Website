@@ -43,6 +43,7 @@ export class HomeComponent implements OnInit {
   }
 
   sideMenu() {
+    console.log("INNNN")
     document.getElementById('side').style.display = 'inline';
     document.getElementById('body').style.overflow = 'hidden';
     this.isModalOpen = true;
