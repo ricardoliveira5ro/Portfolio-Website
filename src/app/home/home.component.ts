@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   isModalOpen: boolean;
-  clickInside: boolean = undefined;
 
   constructor(private router: Router) { 
     this.isModalOpen = false;
@@ -49,14 +48,15 @@ export class HomeComponent implements OnInit {
       document.getElementById('side').style.display = 'block';
       document.getElementById('body').style.overflow = 'hidden';
       this.isModalOpen = true;
-      this.clickInside = true;
     }
   }
 
   closeModal(event) {
-    +event.clientX < (window.innerWidth - 224) ? this.clickInside = false : this.clickInside = true;
+    console.log(+event.clientX)
+    console.log((window.innerWidth - 224))
+    console.log(window.innerWidth)
 
-    if(+event.clientX < (window.innerWidth - 224) && this.isModalOpen && !this.clickInside) {
+    if(+event.clientX < (window.innerWidth - 224) && this.isModalOpen) {
       console.log("To close")
       document.getElementById('side').style.display = 'none';
       document.getElementById('body').style.overflow = 'auto';
