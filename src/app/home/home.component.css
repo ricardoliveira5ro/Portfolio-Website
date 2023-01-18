@@ -1,9 +1,9 @@
-a:hover {
-    cursor: pointer;
+.home {
+    @apply flex flex-col min-h-[var(--app-height)];
 }
 
-.home {
-    @apply flex flex-col min-h-[var(--app-height)] mb-20;
+a:hover {
+    cursor: pointer;
 }
 
 .header {

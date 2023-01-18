@@ -1,5 +1,5 @@
 .experience {
-    @apply flex flex-col min-h-[var(--app-height)] mb-20;
+    @apply flex flex-col min-h-[var(--app-height)];
 }
 
 .divExperience {

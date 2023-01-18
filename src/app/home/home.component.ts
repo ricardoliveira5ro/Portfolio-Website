@@ -45,7 +45,6 @@ export class HomeComponent implements OnInit {
 
   sideMenu() {
     if(!this.isModalOpen) {
-      console.log("IN")
       document.getElementById('side').style.display = 'inline';
       document.getElementById('body').style.overflow = 'hidden';
       this.isModalOpen = true;
@@ -53,13 +52,7 @@ export class HomeComponent implements OnInit {
   }
 
   closeModal(event) {
-    console.log(+event.clientX)
-    console.log((window.screen.width - 224))
-    console.log(window.screen.width)
-    console.log(window.innerWidth)
-    console.log(document.documentElement.clientWidth)
     if(+event.clientX < (document.documentElement.clientWidth - 224) && this.isModalOpen) {
-      console.log("CLOSE")
       document.getElementById('side').style.display = 'none';
       document.getElementById('body').style.overflow = 'auto';
       this.isModalOpen = false;
