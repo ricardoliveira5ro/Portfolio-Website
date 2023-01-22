@@ -26,7 +26,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   nextSection() {
-    this.router.navigate(['projects']);
+    this.router.navigate(['about-me']);
   }
 
   home() {
