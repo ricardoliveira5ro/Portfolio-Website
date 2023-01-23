@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
         this.router.navigate(['projects']);
         break;
       case 3:
-        this.router.navigate(['about']);
+        this.router.navigate(['about-me']);
         break;
       case 4:
         this.router.navigate(['contacts']);
