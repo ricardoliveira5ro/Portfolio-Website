@@ -14,6 +14,7 @@ import { ProjectsDetailComponent } from './projects-detail/projects-detail.compo
 import { ProjectsDataService } from './services/projects-data.service';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProjectsComponent,
     ProjectsDetailComponent,
     NotFoundComponent,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,

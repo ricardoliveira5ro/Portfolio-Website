@@ -22,7 +22,7 @@ export class AboutComponent implements OnInit {
   }
 
   nextSection() {
-    this.router.navigate(['about-me']);
+    this.router.navigate(['contacts']);
   }
 
   home() {
