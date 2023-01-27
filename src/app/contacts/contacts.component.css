@@ -1,0 +1,100 @@
+.contacts {
+    @apply flex min-h-[var(--app-height)] justify-center;
+}
+
+.content {
+    @apply flex flex-col flex-1 max-w-2xl pt-14
+}
+
+.content h1 {
+    font-family: 'Bebas Neue', cursive;
+    @apply text-[#E5C34D] text-5xl;
+}
+
+.header {
+    @apply flex justify-between items-center
+}
+
+.socials {
+    @apply flex
+}
+
+.socials a {
+    @apply ml-3
+}
+
+.socials img {
+    @apply max-w-[30px]
+}
+
+.form {
+    @apply flex flex-col
+}
+
+.inputs {
+    @apply flex flex-col mt-5
+}
+
+.form label {
+    font-family: 'Catamaran', sans-serif;
+    @apply text-white text-lg
+}
+
+.form input,
+.form textarea {
+    font-family: 'Montserrat', sans-serif;
+    @apply rounded-[10px] mt-1 px-4 py-2.5 bg-[#A1A1A1]
+}
+
+.form textarea {
+    @apply resize-none h-40 overflow-hidden
+}
+
+/* Placeholder color */
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: black;
+}
+
+::-ms-input-placeholder {
+    color: black;
+}
+
+.form button {
+    font-family: 'Wendy One', sans-serif;
+    transition: 0.5s;
+    @apply w-fit h-fit bg-[#E5C34D] rounded-md px-3 py-0.5 text-lg
+}
+
+.form button:hover {
+    @apply bg-white text-[#c8a836]
+}
+
+.footer {
+    @apply flex justify-between mt-5
+}
+
+.footer a {
+    @apply flex items-center 
+}
+
+.footer a:hover {
+    border-bottom: 2px solid #E5C34D;
+}
+
+.footer p {
+    font-family: 'Montserrat', sans-serif;
+    @apply text-white mr-2
+}
+
+.arrowIcon {
+    @apply max-w-[35px] mt-0.5
+}
+
+a:hover {
+    cursor: pointer;
+}
