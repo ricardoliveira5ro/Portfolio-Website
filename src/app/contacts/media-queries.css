@@ -4,6 +4,20 @@
     }
 }
 
+@media (max-width: 500px) {
+    .form button {
+        @apply text-base
+    }
+
+    .footer p {
+        @apply text-sm
+    }
+    
+    .arrowIcon {
+        @apply max-w-[30px] mt-0.5
+    }
+}
+
 @media (max-height: 650px) {
     .content {
         @apply pt-8

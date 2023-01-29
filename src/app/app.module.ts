@@ -16,6 +16,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EmailService } from './services/email.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [ExperienceDataService, ProjectsDataService],
+  providers: [ExperienceDataService, ProjectsDataService, EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
