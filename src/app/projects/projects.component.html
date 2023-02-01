@@ -1,0 +1,44 @@
+<section id="Projects" class="projects" [@fadeIn]>
+    <div class="projectsTitle">
+        <h1>Projects</h1>
+    </div>
+    <div class="projectsDiv">
+        <ol>
+            <li *ngFor="let project of projectsList">
+                <a *ngIf="project.listable" (click)="selectedProject(project.id)">
+                    <div class="projectCard">
+                        <div class="cardImage">
+                            <!-- 1920x1080 for consistent image card -->
+                            <img src='{{ project.imageURL }}' alt="Project Cover">
+                        </div>
+                        <div class="cardInfo">
+                            <p>{{ project.title }}</p>
+                        </div>
+                    </div>
+                </a>
+                <div *ngIf="!project.listable" class="projectCard">
+                    <div class="cardImage">
+                        <!-- 1920x1080 for consistent image card -->
+                        <img src='{{ project.imageURL }}' alt="Project Cover">
+                    </div>
+                    <div class="cardInfo">
+                        <p>{{ project.title }}</p>
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </div>
+    <div class="bottomDiv">
+        <div class="bottomLeft"></div>
+        <div class="bounce bottomMid">
+            <p>About</p>
+            <a (click)="nextSection()"><img src="../../assets/images/icons/down-arrow.png" alt="Scroll Down"></a>
+        </div>
+        <div class="bottomRight">
+            <a (click)="home()"><i class="fa-solid fa-angles-up fa-xl" style="color: #E5C34D;"></i>
+                <p>Top</p>
+            </a>
+        </div>
+    </div>
+    <!--<app-scroll-down [nextSection]="nextSection"></app-scroll-down>-->
+</section>

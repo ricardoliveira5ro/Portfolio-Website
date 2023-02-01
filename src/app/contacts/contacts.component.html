@@ -1,0 +1,41 @@
+<app-success-alert *ngIf="successAlert"></app-success-alert>
+<app-error-alert *ngIf="errorAlert"></app-error-alert>
+<section class="contacts" [@fadeIn]>
+    <div class="content">
+        <div class="header">
+            <h1>Contact</h1>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/ricardo5oliveira" target="_blank" rel="noopener noreferrer">
+                    <img src="../../assets/images/socials/linkedin.png" alt="LinkedIn Icon">
+                </a>
+                <a href="https://github.com/ricardoliveira5ro" target="_blank" rel="noopener noreferrer">
+                    <img src="../../assets/images/socials/github.png" alt="GitHub Icon">
+                </a>
+            </div>
+        </div>
+        <form [formGroup]="FormData" autocomplete="off" (ngSubmit)="onSubmit(FormData.value)">
+            <div class="form">
+                <div class="inputs">
+                    <label for="Name">Name</label>
+                    <input type="text" name="Name" placeholder="Enter your name" formControlName="Name">
+                </div>
+                <div class="inputs">
+                    <label for="EmailAddress">Email</label>
+                    <input type="email" name="EmailAddress" placeholder="Enter your email" formControlName="EmailAddress">
+                </div>
+                <div class="inputs">
+                    <label for="Message">Message</label>
+                    <textarea formControlName="Message" name="Message"></textarea>
+                </div>
+                <div class="footer">
+                    <!--<button type="submit" [disabled]="!FormData.valid">Submit</button>-->
+                    <button type="submit">Submit</button>
+                    <a (click)="home()">
+                        <p>Go Back Home</p>
+                        <img class="arrowIcon" src="../../assets/images/icons/long-right-arrow.png" alt="Arrow Icon">
+                    </a>
+                </div>                
+            </div>
+        </form>
+    </div>
+</section>

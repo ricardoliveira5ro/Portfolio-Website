@@ -1,0 +1,11 @@
+@media (max-width: 1300px) {
+    .projectCard {
+        @apply max-w-[500px];
+    }
+
+    @media (max-width: 700px) {
+        .projectsDiv li {
+            @apply px-12;
+        }
+    }
+}
