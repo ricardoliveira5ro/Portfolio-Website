@@ -27,6 +27,9 @@ export class ContactsComponent implements OnInit {
   }
 
   onSubmit(FormData) {
+    
+
+    /*
     this.email.SendEmail(FormData)
       .subscribe(response => {
         location.href = 'https://mailthis.to/confirm'
@@ -45,7 +48,7 @@ export class ContactsComponent implements OnInit {
         setTimeout(action =>
           this.errorAlert = false
           , 7000)      
-      })
+      })*/
   }
 
   home() {
