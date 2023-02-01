@@ -29,7 +29,7 @@ export class ContactsComponent implements OnInit {
   onSubmit(FormData) {
     this.email.SendEmail(FormData)
       .subscribe(response => {
-        //location.href = 'https://mailthis.to/confirm'
+        location.href = 'https://mailthis.to/confirm'
         this.successAlert = true;
         this.FormData.reset();        
         setTimeout(action =>
