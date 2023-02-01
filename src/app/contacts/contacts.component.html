@@ -1,3 +1,5 @@
+<app-success-alert *ngIf="successAlert"></app-success-alert>
+<app-error-alert *ngIf="errorAlert"></app-error-alert>
 <section class="contacts" [@fadeIn]>
     <div class="content">
         <div class="header">
@@ -26,7 +28,8 @@
                     <textarea formControlName="Message" name="Message"></textarea>
                 </div>
                 <div class="footer">
-                    <button type="submit" [disabled]="!FormData.valid">Submit</button>
+                    <!--<button type="submit" [disabled]="!FormData.valid">Submit</button>-->
+                    <button type="submit">Submit</button>
                     <a (click)="home()">
                         <p>Go Back Home</p>
                         <img class="arrowIcon" src="../../assets/images/icons/long-right-arrow.png" alt="Arrow Icon">

@@ -17,6 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EmailService } from './services/email.service';
+import { SuccessAlertComponent } from './success-alert/success-alert.component';
+import { ErrorAlertComponent } from './error-alert/error-alert.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { EmailService } from './services/email.service';
     ProjectsDetailComponent,
     NotFoundComponent,
     ContactsComponent,
+    SuccessAlertComponent,
+    ErrorAlertComponent,
   ],
   imports: [
     BrowserModule,

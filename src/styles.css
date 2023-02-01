@@ -6,3 +6,7 @@ html {
 html::-webkit-scrollbar {
     display: none;
 }
+
+a:hover {
+    cursor: pointer;
+}

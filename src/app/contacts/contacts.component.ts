@@ -1,16 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { FadeIn } from '../app.routing.animation';
 import { EmailService } from '../services/email.service';
 
 @Component({
   selector: 'app-contacts',
   templateUrl: './contacts.component.html',
-  styleUrls: ['./contacts.component.css', './media-queries.css']
+  styleUrls: ['./contacts.component.css', './media-queries.css'],
+  animations: [FadeIn(500, true)]
 })
 export class ContactsComponent implements OnInit {
 
   FormData: FormGroup;
+  successAlert = false;
+  errorAlert = false;
 
   constructor(private router: Router, private builder: FormBuilder, private email: EmailService) { }
 
@@ -25,11 +29,22 @@ export class ContactsComponent implements OnInit {
   onSubmit(FormData) {
     this.email.SendEmail(FormData)
       .subscribe(response => {
-        
         //location.href = 'https://mailthis.to/confirm'
+        this.successAlert = true;
+        this.FormData.reset();        
+        setTimeout(action =>
+          this.successAlert = false
+          , 7000)
       }, error => {
         console.warn(error.responseText)
         console.log({ error })
+
+        this.FormData.reset();
+
+        this.errorAlert = true;
+        setTimeout(action =>
+          this.errorAlert = false
+          , 7000)      
       })
   }
 
