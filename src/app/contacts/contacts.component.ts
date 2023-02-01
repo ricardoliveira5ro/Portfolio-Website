@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { environment } from 'src/environments/environment.prod';
+import { environment } from 'src/environments/environment';
 import { FadeIn } from '../app.routing.animation';
 import { EmailService } from '../services/email.service';
 
@@ -28,8 +28,7 @@ export class ContactsComponent implements OnInit {
   }
 
   onSubmit(FormData) {
-    console.log(environment.sendGrid)
-
+    console.log(environment.sendGrid + "   AAA")
     /*
     this.email.SendEmail(FormData)
       .subscribe(response => {
