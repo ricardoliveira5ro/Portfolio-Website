@@ -28,7 +28,7 @@ export class ContactsComponent implements OnInit {
   }
 
   onSubmit(FormData) {
-    console.log(environment.sendGrid + "   AAA")
+    console.log("KEY: " + environment.sendGrid)
     /*
     this.email.SendEmail(FormData)
       .subscribe(response => {
