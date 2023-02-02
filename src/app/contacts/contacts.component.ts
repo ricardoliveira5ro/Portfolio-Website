@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { environment } from 'src/environments/environment';
 import { FadeIn } from '../app.routing.animation';
 import { EmailService } from '../services/email.service';
+import { keys } from '../../../untracked'
 
 @Component({
   selector: 'app-contacts',
@@ -28,7 +28,7 @@ export class ContactsComponent implements OnInit {
   }
 
   onSubmit(FormData) {
-    console.log("KEY: " + environment.sendGrid)
+    console.log("KEY: " + keys)
     /*
     this.email.SendEmail(FormData)
       .subscribe(response => {
