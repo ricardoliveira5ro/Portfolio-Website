@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { FadeIn } from '../app.routing.animation';
 import { EmailService } from '../services/email.service';
 import { keys } from '../../../untracked'
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contacts',
@@ -17,7 +18,7 @@ export class ContactsComponent implements OnInit {
   successAlert = false;
   errorAlert = false;
 
-  constructor(private router: Router, private builder: FormBuilder, private email: EmailService) { }
+  constructor(private router: Router, private builder: FormBuilder, private email: EmailService, private http: HttpClient) { }
 
   ngOnInit(): void {
     this.FormData = this.builder.group({
@@ -28,27 +29,26 @@ export class ContactsComponent implements OnInit {
   }
 
   onSubmit(FormData) {
-    console.log("KEY: " + keys)
-    /*
-    this.email.SendEmail(FormData)
+    const data = {
+      name: FormData.get('Name').value,
+      email: FormData.get('EmailAddress').value,
+      message: FormData.get('Message').value
+    };
+    this.FormData.reset()
+
+    this.http.post(keys.formspree, data)
       .subscribe(response => {
-        location.href = 'https://mailthis.to/confirm'
         this.successAlert = true;
-        this.FormData.reset();        
         setTimeout(action =>
           this.successAlert = false
           , 7000)
+
       }, error => {
-        console.warn(error.responseText)
-        console.log({ error })
-
-        this.FormData.reset();
-
         this.errorAlert = true;
         setTimeout(action =>
           this.errorAlert = false
-          , 7000)      
-      })*/
+          , 7000)
+      });
   }
 
   home() {

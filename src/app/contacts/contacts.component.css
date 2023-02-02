@@ -95,6 +95,6 @@
     @apply max-w-[35px] mt-0.5
 }
 
-a:hover {
-    cursor: pointer;
+.invalidButton.ng-invalid {
+    cursor: not-allowed;
 }

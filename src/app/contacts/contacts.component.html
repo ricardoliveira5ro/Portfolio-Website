@@ -13,7 +13,7 @@
                 </a>
             </div>
         </div>
-        <form [formGroup]="FormData" autocomplete="off" (ngSubmit)="onSubmit(FormData.value)">
+        <form [formGroup]="FormData" autocomplete="off" (ngSubmit)="onSubmit(FormData)">
             <div class="form">
                 <div class="inputs">
                     <label for="Name">Name</label>
@@ -28,8 +28,7 @@
                     <textarea formControlName="Message" name="Message"></textarea>
                 </div>
                 <div class="footer">
-                    <!--<button type="submit" [disabled]="!FormData.valid">Submit</button>-->
-                    <button type="submit">Submit</button>
+                    <button class="invalidButton" type="submit" [disabled]="!FormData.valid" [ngClass]="{'ng-invalid': FormData.invalid}">Submit</button>
                     <a (click)="home()">
                         <p>Go Back Home</p>
                         <img class="arrowIcon" src="../../assets/images/icons/long-right-arrow.png" alt="Arrow Icon">
