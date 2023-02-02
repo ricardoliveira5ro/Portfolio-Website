@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { FadeIn } from '../app.routing.animation';
-import { EmailService } from '../services/email.service';
 import { keys } from '../../../untracked'
 import { HttpClient } from '@angular/common/http';
 
@@ -15,10 +14,11 @@ import { HttpClient } from '@angular/common/http';
 export class ContactsComponent implements OnInit {
 
   FormData: FormGroup;
+  loading = false;
   successAlert = false;
   errorAlert = false;
 
-  constructor(private router: Router, private builder: FormBuilder, private email: EmailService, private http: HttpClient) { }
+  constructor(private router: Router, private builder: FormBuilder, private http: HttpClient) { }
 
   ngOnInit(): void {
     this.FormData = this.builder.group({
@@ -36,14 +36,22 @@ export class ContactsComponent implements OnInit {
     };
     this.FormData.reset()
 
-    this.http.post(keys.formspree, data)
-      .subscribe(response => {
+    this.loading = true;
+    document.getElementById('body').style.overflow = 'hidden';    
+
+    this.http.post(keys.formspree_dev, data)
+      .subscribe(() => {
+        this.loading = false;
+        document.getElementById('body').style.overflow = 'auto';  
+
         this.successAlert = true;
         setTimeout(action =>
           this.successAlert = false
           , 7000)
+      }, (error) => {
+        this.loading = false;
+        document.getElementById('body').style.overflow = 'auto';  
 
-      }, error => {
         this.errorAlert = true;
         setTimeout(action =>
           this.errorAlert = false

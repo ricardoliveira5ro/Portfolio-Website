@@ -16,9 +16,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { EmailService } from './services/email.service';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { ErrorAlertComponent } from './error-alert/error-alert.component';
+import { SendingComponent } from './sending/sending.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +33,7 @@ import { ErrorAlertComponent } from './error-alert/error-alert.component';
     ContactsComponent,
     SuccessAlertComponent,
     ErrorAlertComponent,
+    SendingComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +42,7 @@ import { ErrorAlertComponent } from './error-alert/error-alert.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [ExperienceDataService, ProjectsDataService, EmailService],
+  providers: [ExperienceDataService, ProjectsDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

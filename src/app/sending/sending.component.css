@@ -1,0 +1,11 @@
+.loading {
+    @apply absolute z-50 w-full h-full flex justify-center items-center bg-[#181a1bbe]
+}
+
+.loading-group {
+    @apply flex text-blue-800 bg-blue-200 rounded-full justify-center items-center px-3 py-1.5
+}
+
+.sending {
+    @apply text-base font-medium leading-none text-center animate-pulse
+}
