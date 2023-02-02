@@ -39,7 +39,7 @@ export class ContactsComponent implements OnInit {
     this.loading = true;
     document.getElementById('body').style.overflow = 'hidden';    
 
-    this.http.post(keys.formspree_dev, data)
+    this.http.post(keys.formspree_prod, data)
       .subscribe(() => {
         this.loading = false;
         document.getElementById('body').style.overflow = 'auto';  
