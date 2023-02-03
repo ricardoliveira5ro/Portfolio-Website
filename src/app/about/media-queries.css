@@ -29,4 +29,28 @@
             @apply mt-2
         }
     }
+
+    @media (max-width: 420px) {
+        .rightDiv p {
+            @apply text-[15px]
+        }
+
+        .rightDiv h3 {
+            @apply text-lg
+        }
+    }
+
+    @media (max-width: 370px) {
+        .name {
+            @apply text-4xl
+        }
+
+        .profilePic {
+            @apply max-h-[275px];
+        }
+
+        .rightDiv h3 {
+            @apply text-base
+        }
+    }
 }
