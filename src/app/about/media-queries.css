@@ -1,41 +1,32 @@
-@media (max-width: 1140px) {
-    .main-content {
-        @apply flex-col pt-8;
-    }
-
+@media (max-width: 1180px) {
     .name {
         @apply text-5xl
     }
 
-    .leftDiv {
-        @apply min-w-full mr-0;
-    }
-
-    .rightDiv div {
-        @apply pt-10;
-    }
-
-    .rightDiv p {
-        @apply text-center;
-    }
-
     .profilePic {
-        @apply max-h-[320px];
+        @apply max-h-[300px];
     }
 
-    @media (max-width: 780px) {
-        .rightDiv p {
-            @apply text-base
-        }
+    .rightDiv {
+        @apply pt-16
     }
 
-    @media (max-width: 710px) {
-        .profilePic {
-            @apply max-h-[300px];
+
+    @media (max-width: 900px) {
+        .main-content {
+            @apply flex-col pt-8;
         }
 
-        .rightDiv p {
-            @apply text-justify text-[15px];
+        .leftDiv {
+            @apply min-w-full mr-0;
+        }
+
+        .rightDiv {
+            @apply pt-10;
+        }
+
+        .bottomDiv {
+            @apply mt-2
         }
     }
 }
