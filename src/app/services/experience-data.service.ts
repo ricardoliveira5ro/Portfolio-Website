@@ -14,7 +14,7 @@ export class ExperienceDataService {
   public getExperienceList() {
     let list: Experience[];
     list = [
-      new Experience('Computer Science and Engineering Degree', 2019, 2022, 'I have studied a variety of algorithm principles and programming languages, used tools and software, and built useful projects in order to deepen my knowledge', ExperienceType.Education),
+      new Experience('Computer Engineering Degree', 2019, 2022, 'I have studied a variety of algorithm principles and programming languages, used tools and software, and built useful projects in order to deepen my knowledge', ExperienceType.Education),
       new Experience('Technical Consultant at CGI', 2022, 'Present', 'Worked as a front-end and back-end developer on a few projects using Java, Groovy, and SQL', ExperienceType.Job)
     ]
 
