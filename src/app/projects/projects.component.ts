@@ -12,7 +12,9 @@ import { ProjectsDataService } from '../services/projects-data.service';
 })
 export class ProjectsComponent implements OnInit {
 
+  nextSection = 'About'
   projectsList: Project[];
+  
   constructor(private service: ProjectsDataService, private router: Router) {
     this.projectsList = this.service.getProjectsList();
   }
@@ -23,14 +25,6 @@ export class ProjectsComponent implements OnInit {
   selectedProject(id: number) {
     this.router.navigate(['projects', id]);
     //this.router.navigate(['projects/project-detail'], { queryParams: { id: id, name: name } });
-  }
-
-  nextSection() {
-    this.router.navigate(['about-me']);
-  }
-
-  home() {
-    this.router.navigate(['']);
   }
 
 }

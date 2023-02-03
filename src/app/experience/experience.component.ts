@@ -13,6 +13,8 @@ import { FadeIn } from '../app.routing.animation';
 })
 export class ExperienceComponent implements OnInit {
 
+  nextSection = 'Projects'
+
   experienceList: Experience[];
   certificationList: Certification[];
 
@@ -45,15 +47,6 @@ export class ExperienceComponent implements OnInit {
         URL.revokeObjectURL(objectUrl);
       })
   }
-
-  nextSection() {
-    this.router.navigate(['projects']);
-  }
-
-  home() {
-    //this.router.navigate(['']);
-  }
-
   
   @HostListener('window:popstate', ['$event'])
   onPopState(event) {    

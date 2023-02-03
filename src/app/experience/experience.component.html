@@ -42,17 +42,5 @@
             <p>Résumé</p>
         </button>
     </div>
-    <div class="bottomDiv">
-        <div class="bottomLeft"></div>
-        <div class="bounce bottomMid">
-            <p>Projects</p>
-            <a (click)="nextSection()"><img src="../../assets/images/icons/down-arrow.png" alt="Scroll Down"></a>
-        </div>
-        <div class="bottomRight">
-            <a (click)="home()"><i class="fa-solid fa-angles-up fa-xl" style="color: #E5C34D;"></i>
-                <p>Top</p>
-            </a>
-        </div>
-    </div>
-    <!--<app-scroll-down [nextSection]="nextSection"></app-scroll-down>-->
+    <app-scroll-down [nextSection]="nextSection"></app-scroll-down>
 </section>

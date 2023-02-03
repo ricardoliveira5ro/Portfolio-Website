@@ -13,6 +13,7 @@ import { AboutDataService } from '../services/about-data.service';
 })
 export class AboutComponent implements OnInit {
 
+  nextSection = 'Contact'
   technologies: AboutTechnology[];
 
   constructor(private router: Router, private service: AboutDataService) { 
@@ -27,13 +28,4 @@ export class AboutComponent implements OnInit {
   getAge() {
     return moment().diff(new Date(2001, 6, 28), 'years');
   }
-
-  nextSection() {
-    this.router.navigate(['contacts']);
-  }
-
-  home() {
-    this.router.navigate(['']);
-  }
-
 }
