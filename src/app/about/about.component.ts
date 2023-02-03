@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as moment from 'moment';
 import { FadeIn } from '../app.routing.animation';
+import { AboutTechnology } from '../models/about-technology';
+import { AboutDataService } from '../services/about-data.service';
 
 @Component({
   selector: 'app-about',
@@ -11,10 +13,15 @@ import { FadeIn } from '../app.routing.animation';
 })
 export class AboutComponent implements OnInit {
 
-  constructor(private router: Router) { 
+  technologies: AboutTechnology[];
+
+  constructor(private router: Router, private service: AboutDataService) { 
+    this.technologies = service.getAboutTechnologies();
+    
   }
 
   ngOnInit(): void {
+
   }
 
   getAge() {

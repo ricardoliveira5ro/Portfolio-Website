@@ -10,23 +10,8 @@
             <p>Programming enthusiast, I recently completed my degree as a <span class="spanRed">Software Engineer</span> at Polytechnic Institute of Setúbal and started my professional experience. In my spare time, I prioritize my <span class="spanRed">personal development</span> by working on projects that will help me improve my technical skills.</p>
             <h3>Technologies I am comfortable with:</h3>
             <div class="technologies">
-                <div class="outside">
-                    <div class="inside">Java</div>
-                </div>
-                <div class="outside">
-                    <div class="inside" style="width: 97%">Angular</div>
-                </div>
-                <div class="outside">
-                    <div class="inside" style="width: 91%">SQL</div>
-                </div>
-                <div class="outside">
-                    <div class="inside" style="width: 85%">C# / .NET</div>
-                </div>
-                <div class="outside">
-                    <div class="inside" style="width: 84%">HTML / CSS</div>
-                </div>
-                <div class="outside">
-                    <div class="inside" style="width: 78%">Javascript / Typescript</div>
+                <div class="outside" *ngFor="let tech of technologies">
+                    <div class="inside" [style.width.%]="tech.percentage">{{ tech.name }}</div>
                 </div>
             </div>
         </div>

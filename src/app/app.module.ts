@@ -19,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { ErrorAlertComponent } from './error-alert/error-alert.component';
 import { SendingComponent } from './sending/sending.component';
+import { AboutDataService } from './services/about-data.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { SendingComponent } from './sending/sending.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [ExperienceDataService, ProjectsDataService],
+  providers: [ExperienceDataService, ProjectsDataService, AboutDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
