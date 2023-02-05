@@ -177,16 +177,24 @@ a:hover {
 }
 
 .homeFooter {
-    @apply flex justify-center items-end pb-5;
+    @apply flex justify-center pb-5;
+}
+
+.homeFooter div {
+    @apply flex flex-col items-center
 }
 
 .homeFooter a {
-    @apply flex justify-center;
+    @apply flex justify-center w-fit;
 }
 
 .homeFooter p {
     font-family: 'Cormorant SC', serif;
     @apply text-white text-2xl text-center;
+}
+
+.homeFooter img {
+    @apply max-w-[30px]
 }
 
 .bounce {

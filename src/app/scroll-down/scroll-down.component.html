@@ -1,19 +1,7 @@
-<!--<div class="bottomDiv">
-    <div class="bottomLeft"></div>
-    <div class="bounce bottomMid">
-        <p>{{ nextSection }}</p>
-        <a href="#{{ nextSection }}"><img src="../../assets/images/icons/down-arrow.png" alt="Scroll Down"></a>
-    </div>
-    <div class="bottomRight">
-        <a href="#homeSection"><i class="fa-solid fa-angles-up fa-xl" style="color: #E5C34D;"></i>
-            <p>Top</p>
-        </a>
-    </div>
-</div>-->
 <div class="bottomDiv">
     <div class="bottomLeft"></div>
     <div class="bounce bottomMid">
-        <p>{{ nextSection }}</p>
+        <a (click)="navigateSection()"><p>{{ nextSection }}</p></a>
         <a (click)="navigateSection()"><img src="../../assets/images/icons/down-arrow.png" alt="Scroll Down"></a>
     </div>
     <div class="bottomRight">
