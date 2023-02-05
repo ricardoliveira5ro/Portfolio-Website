@@ -23,15 +23,17 @@
     <div class="divCertifications">
         <h2>Certificates</h2>
         <div class="certificationsList">
-            <ol >
+            <ol>
                 <li *ngFor="let certification of certificationList">
-                    <div>
-                        <img src='{{ certification.imageURL }}' alt="">
-                    </div>
-                    <div class="certificationText">
-                        <p class="certificationTitle">{{ certification.title }}</p>
-                        <p class="certificationDescription">{{ certification.completedDate }}, by {{ certification.authBy }}</p>
-                    </div>
+                    <a href='{{ certification.url }}' target="_blank" rel="noopener noreferrer">
+                        <div>
+                            <img src='{{ certification.imageURL }}' alt="">
+                        </div>
+                        <div class="certificationText">
+                            <p class="certificationTitle">{{ certification.title }}</p>
+                            <p class="certificationDescription">{{ certification.completedDate }}, by {{ certification.authBy }}</p>
+                        </div>
+                    </a>                    
                 </li>
             </ol>
         </div>

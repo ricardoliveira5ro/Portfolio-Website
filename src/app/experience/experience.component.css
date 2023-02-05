@@ -70,7 +70,17 @@
 }
 
 .divCertifications li {
-    @apply flex items-center px-3 py-2 bg-[#545454] w-fit rounded-xl mr-7 mb-4;
+    transition: 0.8s;
+    @apply bg-[#545454] rounded-xl mr-7 mb-4;
+}
+
+.divCertifications li:hover{
+    @apply bg-[#e5c44d5a]
+}
+
+.divCertifications a {
+    cursor: help !important;
+    @apply flex items-center px-3 py-2 rounded-xl
 }
 
 .certificationText {
