@@ -5,6 +5,10 @@
 }
 
 @media (max-width: 500px) {
+    .content {
+        @apply px-8
+    }
+
     .form button {
         @apply text-base
     }
@@ -18,9 +22,10 @@
     }
 
     .socials button {
-        @apply border-none
+        @apply hidden
     }
 
+    /*
     .socials p {
         @apply hidden
     }
@@ -31,7 +36,7 @@
 
     .socials a {
         @apply ml-0 mr-2
-    }
+    }*/
 }
 
 @media (max-height: 650px) {
