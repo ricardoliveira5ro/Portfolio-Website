@@ -6,10 +6,6 @@
     .timelineText {
         @apply mt-4;
     }
-
-    .divResume {
-        @apply pt-0;
-    }
     
     .divCertifications ol { 
         @apply pb-0;
@@ -26,12 +22,46 @@
     }
 
     @media (max-width: 670px) {
-        .divResume {
-            @apply pb-10;
-        }
-
         .certificationTitle {
             @apply text-sm;
+        }
+    }
+
+    @media (max-width: 455px) {
+        .timelineText h3 {
+            @apply text-base
+        }
+
+        .timelineText p {
+            @apply text-sm
+        }
+
+        .timelineText {
+            @apply pr-1;
+        }
+
+        .divExperience {
+            @apply pl-5
+        }
+
+        .divCertifications {
+            @apply pl-5
+        }
+    }
+
+    @media (max-width: 430px) {
+        .certificationsList {
+            @apply pr-9
+        }
+
+        .certificationsList li {
+            @apply w-full mr-0
+        }        
+    }
+
+    @media (max-width: 380px) {
+        .timelineText h3 {
+            @apply text-[15px]
         }
     }
 }

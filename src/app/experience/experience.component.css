@@ -53,7 +53,7 @@
 }
 
 .divCertifications {
-    @apply flex flex-col pl-8;
+    @apply flex flex-col flex-1 pl-8 pb-10;
 }
 
 .divCertifications h2 {
@@ -97,6 +97,7 @@
     @apply text-white text-xs;
 }
 
+/*
 .divResume {
     @apply flex flex-1 px-10 pt-3;
 }
@@ -107,4 +108,4 @@
 
 .divResume p {
     @apply text-white text-xl pl-2;
-}
+}*/

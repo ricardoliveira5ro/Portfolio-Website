@@ -35,6 +35,7 @@ export class ExperienceComponent implements OnInit {
     return (e.type == ExperienceType.Job);
   }
 
+  /*
   downloadResume(){
     this.service
       .download('../../assets/CV_RICARDO_OLIVEIRA_EN.pdf')
@@ -46,12 +47,13 @@ export class ExperienceComponent implements OnInit {
         a.click();
         URL.revokeObjectURL(objectUrl);
       })
-  }
+  }*/
   
+  /*
   @HostListener('window:popstate', ['$event'])
   onPopState(event) {    
     this.router.navigate(['']);
-  }
+  }*/
 
 }
   
