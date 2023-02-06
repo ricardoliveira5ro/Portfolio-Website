@@ -96,16 +96,3 @@
     font-family: 'Montserrat', sans-serif;
     @apply text-white text-xs;
 }
-
-/*
-.divResume {
-    @apply flex flex-1 px-10 pt-3;
-}
-
-.divResume button {
-    @apply bg-black w-fit h-fit flex items-center justify-center p-3 border rounded-xl;
-}
-
-.divResume p {
-    @apply text-white text-xl pl-2;
-}*/

@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { FadeIn } from '../app.routing.animation';
 import { keys } from '../../../untracked'
 import { HttpClient } from '@angular/common/http';
+import { ExperienceDataService } from '../services/experience-data.service';
 
 @Component({
   selector: 'app-contacts',
@@ -18,7 +19,7 @@ export class ContactsComponent implements OnInit {
   successAlert = false;
   errorAlert = false;
 
-  constructor(private router: Router, private builder: FormBuilder, private http: HttpClient) { }
+  constructor(private router: Router, private builder: FormBuilder, private http: HttpClient, private service: ExperienceDataService,) { }
 
   ngOnInit(): void {
     this.FormData = this.builder.group({
@@ -61,5 +62,18 @@ export class ContactsComponent implements OnInit {
 
   home() {
     this.router.navigate(['']);
+  }
+
+  downloadResume(){
+    this.service
+      .download('../../assets/CV_RICARDO_OLIVEIRA_EN.pdf')
+      .subscribe(blob => {
+        const a = document.createElement('a')
+        const objectUrl = URL.createObjectURL(blob)
+        a.href = objectUrl
+        a.download = 'CV_RICARDO_OLIVEIRA.pdf';
+        a.click();
+        URL.revokeObjectURL(objectUrl);
+      })
   }
 }

@@ -16,7 +16,7 @@
 }
 
 .socials {
-    @apply flex
+    @apply flex items-center
 }
 
 .socials a {
@@ -25,6 +25,20 @@
 
 .socials img {
     @apply max-w-[30px]
+}
+
+.socials button {
+    border: 2px solid #E5C34D;
+    @apply flex items-center rounded-full px-3
+}
+
+.socials i {
+    @apply mr-1.5
+}
+
+.socials p {
+    font-family: 'Source Serif Pro', serif;
+    @apply text-[#cccccc] text-lg pt-1
 }
 
 .form {

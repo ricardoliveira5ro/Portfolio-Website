@@ -16,6 +16,22 @@
     .arrowIcon {
         @apply max-w-[30px] mt-0.5
     }
+
+    .socials button {
+        @apply border-none
+    }
+
+    .socials p {
+        @apply hidden
+    }
+
+    .socials i {
+        @apply mr-0
+    }
+
+    .socials a {
+        @apply ml-0 mr-2
+    }
 }
 
 @media (max-height: 650px) {
@@ -58,3 +74,4 @@
         @apply max-w-[30px] mt-0.5
     }
 }
+
