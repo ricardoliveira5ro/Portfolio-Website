@@ -20,14 +20,16 @@ a:hover {
 
 .navbar a {
     font-family: 'Cormorant SC', serif;
-    transition: 0.2s ease;
+    transition: 0.5s ease;
     text-decoration: none;
     @apply text-white text-3xl mx-10;
 }
 
+
 .navbar a:hover {
-    border-top: 4px solid #E5C34D;
-    border-bottom: 4px solid #E5C34D;
+    /*border-top: 4px solid #E5C34D;*/
+    /*border-bottom: 2px solid #FFFF;*/
+    @apply text-[#E5C34D]
 }
 
 .navbar button {
