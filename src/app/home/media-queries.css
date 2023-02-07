@@ -3,19 +3,9 @@
         @apply py-3;
     }
 
-    @media (max-height: 640px){
-        .homeMain {
-            @apply pt-2;
-        }
-    }
-
     @media (max-height: 590px){               
         .homeFooter {
             @apply hidden;
-        }
-
-        .homeMain {
-            @apply pt-5;
         }
     }
 }
@@ -48,30 +38,20 @@
     }
 
     .homeImg {
-        content: url("../../assets/images/general/home_150w.png")
+        @apply max-w-[150px]
     }
 
     .homeSlogan {
         @apply hidden;
     }
 
-    @media (max-height: 720px) {
-        .homeMain {
-            @apply pt-2;
-        }
-
-        @media (max-height: 660px) {
-            .header {
-                @apply py-3;
-            }            
-        }
+    @media (max-height: 660px) {
+        .header {
+            @apply py-3;
+        }            
     }
 
-    @media (max-height: 590px) {
-        .homeMain {
-            @apply pt-6;
-        }
-
+    @media (max-height: 580px) {
         .homeFooter {
             @apply hidden;
         }

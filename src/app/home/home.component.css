@@ -7,7 +7,15 @@ a:hover {
 }
 
 .header {
-    @apply flex justify-between flex-wrap w-full items-center top-0 p-10;
+    @apply flex justify-between flex-wrap w-full items-center top-0 px-10 pt-7;
+}
+
+.menuIcon {
+    @apply max-w-[27px]
+}
+
+.navbar {
+    @apply flex
 }
 
 .navbar a {
@@ -67,7 +75,7 @@ a:hover {
 }
 
 .side-menu-options img {
-    @apply inline-flex mr-3 mb-[3px];
+    @apply inline-flex mr-3 mb-1.5 max-w-[20px];
 }
 
 .side-menu-socials {
@@ -102,7 +110,7 @@ a:hover {
 }
 
 .homeMain {
-    @apply w-full flex flex-1 pt-10;
+    @apply w-full flex flex-1 pb-4 items-center;
 }
 
 .homeLeftDiv {
@@ -115,6 +123,10 @@ a:hover {
 
 .homeTextDiv {
     @apply flex items-center justify-center;
+}
+
+.homeImg {
+    @apply max-w-[200px]
 }
 
 .homeTextDiv div {
