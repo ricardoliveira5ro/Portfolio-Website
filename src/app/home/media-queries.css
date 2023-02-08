@@ -57,3 +57,53 @@
         }
     }
 }
+
+@media (min-width: 1900px) and (min-height: 1000px) {
+    .header {
+        @apply px-12;
+    }
+
+    .homeMain {
+        @apply pb-10;
+    }
+
+    .navbar a {
+        @apply text-4xl;
+    }
+
+    .presentationText {
+        @apply text-2xl;
+    }
+
+    .nameText {
+        @apply text-[80px];
+    }
+    
+    .sofwareEngineerText {
+        @apply text-white text-3xl;
+    }
+
+    .homeSlogan {
+        @apply pt-10;
+    }
+
+    .homeSlogan p {
+        @apply text-6xl;
+    }
+
+    .homeImg {
+        @apply max-w-[230px]
+    }
+
+    .socialsList i {
+        font-size: 28px;
+    }
+
+    .homeFooter p {
+        @apply text-[32px] pb-2;
+    }
+    
+    .homeFooter img {
+        @apply max-w-[40px]
+    }
+}
