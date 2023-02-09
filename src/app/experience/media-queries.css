@@ -65,3 +65,37 @@
         }
     }
 }
+
+@media (min-width: 1900px) and (min-height: 1000px) {
+    .divExperience {
+        @apply px-10 py-5
+    }
+
+    .divCertifications {
+        @apply pl-10
+    }
+
+    .timelineText h3 {
+        @apply text-2xl;
+    }
+
+    .timelineText time {
+        @apply text-lg;
+    }
+    
+    .timelineText p {
+        @apply text-xl;
+    }
+
+    .certificationsList img {
+        @apply max-w-[38px]
+    }
+
+    .certificationTitle {
+        @apply text-xl;
+    }
+    
+    .certificationDescription {
+        @apply text-sm;
+    }
+}

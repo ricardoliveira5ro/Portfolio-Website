@@ -24,7 +24,7 @@
 }
 
 .bottomRight {
-    @apply w-1/12 flex justify-center; 
+    @apply w-1/12 flex flex-col justify-center items-center; 
 }
 
 .bottomRight a{
@@ -58,5 +58,24 @@
 @media (max-width: 600px) {
     .bottomRight a {
         @apply hidden;
+    }
+}
+
+@media (min-width: 1900px) and (min-height: 1000px) {
+    .bottomMid p {
+        @apply text-[32px] pb-2;
+    }
+    
+    .bottomMid img {
+        @apply max-w-[40px]
+    }
+
+    .bottomRight p {
+        @apply text-[32px] mb-4
+    }
+
+    .bottomRight i {
+        font-size: 32px;
+        @apply mb-2
     }
 }

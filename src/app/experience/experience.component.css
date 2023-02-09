@@ -65,20 +65,24 @@
     @apply px-2;
 }
 
-.divCertifications ol {
+.certificationsList ol {
     @apply py-3 flex flex-wrap;
 }
 
-.divCertifications li {
+.certificationsList li {
     transition: 0.8s;
     @apply bg-[#545454] rounded-xl mr-7 mb-4;
 }
 
-.divCertifications li:hover{
+.certificationsList li:hover{
     @apply bg-[#e5c44d5a]
 }
 
-.divCertifications a {
+.certificationsList img {
+    @apply max-w-[30px]
+}
+
+.certificationsList a {
     cursor: help !important;
     @apply flex items-center px-3 py-2 rounded-xl
 }
