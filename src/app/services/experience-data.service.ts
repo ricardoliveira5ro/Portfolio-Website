@@ -24,9 +24,9 @@ export class ExperienceDataService {
   public getCertificationsList() {
     let list: Certification[];
     list = [
-      new Certification('Python - Scientific Computing', '../../assets/images/certifications/python.png', 2022, 'FreeCodeCamp', 'https://www.freecodecamp.org/learn/scientific-computing-with-python/'),
       new Certification('Angular - The Complete Guide', '../../assets/images/certifications/angular.png', 2022, 'Udemy', 'https://www.udemy.com/course/the-complete-guide-to-angular-2/'),
-      new Certification('Apache Groovy Developer', '../../assets/images/certifications/groovy.png', 2022, 'Udemy', 'https://www.udemy.com/course/apache-groovy/?src=sac&kw=Apache+Groovy+Developer')
+      new Certification('Apache Groovy Developer', '../../assets/images/certifications/groovy.png', 2022, 'Udemy', 'https://www.udemy.com/course/apache-groovy/?src=sac&kw=Apache+Groovy+Developer'),
+      new Certification('ASP.NET Core Web API', '../../assets/images/certifications/dotNetCore.png', 2023, 'Udemy', 'https://www.udemy.com/course/aspnet-core-web-api-csharp-dotnet-course-bootcamp/')
     ]
 
     return list;
