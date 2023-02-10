@@ -9,3 +9,25 @@
         }
     }
 }
+
+@media (min-width: 2400px) and (min-height: 1100px) {
+    .projectsTitle {
+        @apply py-14;
+    }
+
+    .projectsTitle h1 {
+        @apply text-[65px];
+    }
+
+    .projectsDiv li {
+        @apply px-10;
+    }
+
+    .projectCard {
+        @apply max-w-[850px];
+    }
+
+    .cardInfo p{
+        @apply text-2xl;
+    }
+}
