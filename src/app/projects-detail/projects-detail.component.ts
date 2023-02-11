@@ -21,12 +21,13 @@ export class ProjectsDetailComponent implements OnInit {
     let id = +this.activatedRoute.snapshot.paramMap.get('id');
     this.activatedProject = this.service.getProjectById(id);
 
+
     //Manually URL id doesnt match
-    if(this.isProjectInvalid())
-      this.router.navigate(['**'])
+    if(this.activatedProject === undefined || !this.isProjectValid())
+      this.router.navigate(['/projects'])
   }
 
-  isProjectInvalid() {
-    return this.activatedProject === undefined;
+  isProjectValid() {
+    return this.activatedProject.listable;
   }
 }
