@@ -38,6 +38,12 @@
     }
 }
 
+@media (max-width: 390px) {
+    .overview h1 {
+        @apply text-4xl;
+    }
+}
+
 @media (min-width: 2000px) and (min-height: 1000px) {
     .overview {
         @apply max-w-[900px] mr-20;
@@ -73,7 +79,5 @@
 
     .technologies span {
         @apply text-lg;
-    }
-
-    
+    }    
 }
