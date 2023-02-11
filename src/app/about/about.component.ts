@@ -9,7 +9,7 @@ import { AboutDataService } from '../services/about-data.service';
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css', './media-queries.css'],
-  animations: [FadeIn(500, true)]
+  animations: [FadeIn(1000, true)]
 })
 export class AboutComponent implements OnInit {
 
