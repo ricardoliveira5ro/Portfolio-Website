@@ -54,3 +54,71 @@
         }
     }
 }
+
+@media (min-width: 2100px) {
+    .main-content {
+        @apply pt-16;
+    }
+
+    .leftDiv {
+        @apply mr-28 min-w-[400px];
+    }
+
+    .name {
+        @apply text-[#E5C34D] text-[65px];
+    }
+
+    .profilePic {
+        @apply max-h-[420px];
+    }
+
+    .age {
+        @apply text-2xl;
+    }
+
+    .flag {
+        @apply max-w-[55px];
+    }
+    
+    .rightDiv {
+        @apply pt-28 max-w-[1300px];
+    }
+
+    .rightDiv p {
+        @apply text-xl 
+    }
+
+    .rightDiv h3 {
+        @apply text-2xl
+    }
+    
+    .inside {
+        @apply text-lg
+    }
+
+    @media (min-width: 2300px) {
+        .leftDiv {
+            @apply mr-32;
+        }
+
+        .profilePic {
+            @apply max-h-[470px] mb-8;
+        }
+    
+        .age {
+            @apply text-3xl;
+        }
+
+        .rightDiv p {
+            @apply text-2xl
+        }
+    
+        .rightDiv h3 {
+            @apply text-3xl mt-6
+        }
+        
+        .inside {
+            @apply text-xl
+        }
+    }
+}
