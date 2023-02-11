@@ -37,3 +37,43 @@
         }
     }
 }
+
+@media (min-width: 2000px) and (min-height: 1000px) {
+    .overview {
+        @apply max-w-[900px] mr-20;
+    }
+
+    .overview h1 {
+        @apply text-6xl;
+    }
+
+    .sub-title {
+        @apply text-2xl;
+    }
+
+    .overview p {
+        @apply text-lg;
+    }
+
+    .cardImage {
+        @apply max-w-[650px] mt-28
+    }
+
+    .demo {
+        @apply text-[20px];
+    }
+    
+    .code {
+        @apply text-[20px];
+    }
+    
+    .technologies img {
+        @apply max-w-[45px];
+    }
+
+    .technologies span {
+        @apply text-lg;
+    }
+
+    
+}
