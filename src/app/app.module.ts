@@ -20,6 +20,7 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { ErrorAlertComponent } from './error-alert/error-alert.component';
 import { SendingComponent } from './sending/sending.component';
 import { AboutDataService } from './services/about-data.service';
+import { NgOptimizedImage } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { AboutDataService } from './services/about-data.service';
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgOptimizedImage
   ],
   providers: [ExperienceDataService, ProjectsDataService, AboutDataService],
   bootstrap: [AppComponent]
