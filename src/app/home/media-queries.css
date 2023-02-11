@@ -58,6 +58,12 @@
     }
 }
 
+@media (max-width: 370px) {
+    .nameText {
+        @apply text-[50px];
+    }
+}
+
 @media (min-width: 1900px) and (min-height: 1000px) {
     .header {
         @apply px-12;

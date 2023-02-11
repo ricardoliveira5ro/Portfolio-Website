@@ -45,5 +45,5 @@
 }
 
 .cardInfo p{
-    @apply text-white
+    @apply text-white text-justify
 }

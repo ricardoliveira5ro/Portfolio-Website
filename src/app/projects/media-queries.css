@@ -8,6 +8,12 @@
             @apply px-12;
         }
     }
+
+    @media(max-width: 470px) {
+        .cardInfo p {
+            @apply text-sm
+        }
+    }
 }
 
 @media (min-width: 2400px) and (min-height: 1100px) {
