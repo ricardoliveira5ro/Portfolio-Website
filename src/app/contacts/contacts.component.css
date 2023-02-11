@@ -3,7 +3,7 @@
 }
 
 .content {
-    @apply flex flex-col flex-1 max-w-2xl pt-14
+    @apply flex flex-col flex-1 max-w-2xl pt-14;
 }
 
 .content h1 {
@@ -12,15 +12,15 @@
 }
 
 .header {
-    @apply flex justify-between items-center
+    @apply flex justify-between items-center;
 }
 
 .socials {
-    @apply flex items-center
+    @apply flex items-center;
 }
 
 .socials a {
-    @apply ml-3
+    @apply ml-3;
 }
 
 .socials img {

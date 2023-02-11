@@ -24,19 +24,6 @@
     .socials button {
         @apply hidden
     }
-
-    /*
-    .socials p {
-        @apply hidden
-    }
-
-    .socials i {
-        @apply mr-0
-    }
-
-    .socials a {
-        @apply ml-0 mr-2
-    }*/
 }
 
 @media (max-height: 650px) {
@@ -80,3 +67,94 @@
     }
 }
 
+@media (min-width: 1800px) {
+    .content {
+        @apply max-w-3xl;
+    }
+}
+
+@media (min-width: 2000px) {
+    .content {
+        @apply max-w-4xl pt-20;
+    }
+
+    .form button {
+        @apply text-xl
+    }
+
+    .footer p {
+        @apply text-lg
+    }
+    
+    .arrowIcon {
+        @apply max-w-[42px]
+    }
+
+    .form label {
+        @apply text-xl
+    }
+
+    .form input,
+    .form textarea {
+        @apply text-lg
+    }
+
+    .socials img {
+        @apply max-w-[35px]
+    }
+
+    .socials p {
+        @apply text-xl
+    }
+
+    .content h1 {
+        @apply text-[55px];
+    }
+
+    .form textarea {
+        @apply h-60
+    }
+}
+
+@media (min-width: 2000px) {
+    .content {
+        @apply max-w-5xl pt-24;
+    }
+
+    .form button {
+        @apply text-2xl
+    }
+
+    .footer p {
+        @apply text-xl
+    }
+    
+    .arrowIcon {
+        @apply max-w-[45px]
+    }
+
+    .form label {
+        @apply text-2xl
+    }
+
+    .form input,
+    .form textarea {
+        @apply text-xl
+    }
+
+    .form textarea {
+        @apply h-64
+    }
+
+    .socials img {
+        @apply max-w-[40px]
+    }
+
+    .socials p {
+        @apply text-2xl
+    }
+
+    .content h1 {
+        @apply text-[60px];
+    }
+}
