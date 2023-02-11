@@ -1,10 +1,12 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FadeIn } from '../app.routing.animation';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css', './media-queries.css']
+  styleUrls: ['./home.component.css', './media-queries.css'],
+  animations: [FadeIn(800, true)]
 })
 export class HomeComponent implements OnInit {
 
