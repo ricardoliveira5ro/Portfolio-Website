@@ -24,9 +24,9 @@ export class ExperienceDataService {
   public getCertificationsList() {
     let list: Certification[];
     list = [
-      new Certification('Angular - The Complete Guide', '../../assets/images/certifications/angular.png', 2022, 'Udemy', 'https://www.udemy.com/course/the-complete-guide-to-angular-2/'),
-      new Certification('Apache Groovy Developer', '../../assets/images/certifications/groovy.png', 2022, 'Udemy', 'https://www.udemy.com/course/apache-groovy/?src=sac&kw=Apache+Groovy+Developer'),
-      new Certification('ASP.NET Core Web API', '../../assets/images/certifications/dotNetCore.png', 2023, 'Udemy', 'https://www.udemy.com/course/aspnet-core-web-api-csharp-dotnet-course-bootcamp/')
+      new Certification('Angular - The Complete Guide', 'https://ik.imagekit.io/ricardo5ro/certifications/angular.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676159770927', 2022, 'Udemy', 'https://www.udemy.com/course/the-complete-guide-to-angular-2/'),
+      new Certification('Apache Groovy Developer', 'https://ik.imagekit.io/ricardo5ro/certifications/groovy.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676159770966', 2022, 'Udemy', 'https://www.udemy.com/course/apache-groovy/?src=sac&kw=Apache+Groovy+Developer'),
+      new Certification('ASP.NET Core Web API', 'https://ik.imagekit.io/ricardo5ro/certifications/dotNetCore.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676159770966', 2023, 'Udemy', 'https://www.udemy.com/course/aspnet-core-web-api-csharp-dotnet-course-bootcamp/')
     ]
 
     return list;
