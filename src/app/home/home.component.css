@@ -128,7 +128,7 @@ a:hover {
 }
 
 .homeImg {
-    @apply min-w-[200px]
+    @apply max-w-[200px]
 }
 
 .homeTextDiv div {
