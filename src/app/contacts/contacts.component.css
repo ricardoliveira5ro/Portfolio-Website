@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Catamaran&family=Montserrat:wght@500&family=Source+Serif+Pro:wght@600&family=Wendy+One&display=swap');
-
 .contacts {
     @apply flex min-h-[var(--app-height)] justify-center;
 }

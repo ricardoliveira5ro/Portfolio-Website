@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 .projects {
     @apply flex flex-col min-h-[var(--app-height)];
 }
