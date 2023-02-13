@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+
 .bottomDiv {
     @apply flex justify-center items-end pb-5;
 }

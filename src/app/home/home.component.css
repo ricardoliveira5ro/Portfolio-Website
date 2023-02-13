@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+SC&family=Iceland&family=Libre+Caslon+Text&display=swap');
+
 .home {
     @apply flex flex-col min-h-[var(--app-height)];
 }
