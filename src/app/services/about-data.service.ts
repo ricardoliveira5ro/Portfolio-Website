@@ -12,12 +12,12 @@ export class AboutDataService {
     let list: AboutTechnology[];
     
     list = [
-      new AboutTechnology("Java", 100),
-      new AboutTechnology("Angular", 97),
-      new AboutTechnology("SQL", 91),
-      new AboutTechnology("C# / .NET", 85),
-      new AboutTechnology("HTML / CSS", 84),
-      new AboutTechnology("Javascript / Typescript", 78)
+      new AboutTechnology("Java"),
+      new AboutTechnology("C# / .NET"),
+      new AboutTechnology("Angular"),
+      new AboutTechnology("Javascript / Typescript"),
+      new AboutTechnology("SQL"),
+      new AboutTechnology("HTML / CSS")
     ]
 
     return list;
