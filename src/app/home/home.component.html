@@ -1,22 +1,26 @@
+<meta
+    name="description"
+    content="This is the home page where you can find an index, my socials and short information about me"
+>
 <section id="homeSection" class="home" (click)="closeModal($event)" [@fadeIn]>
     <div id="side" class="side">
         <div class="side-menu slide-left">
             <div class="side-menu-options">
                 <ul>
-                    <a (click)="goToSection(1)">
+                    <a (click)="goToSection(1)" href="">
                         <li><img src="https://ik.imagekit.io/ricardo5ro/icons/right-arrow.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676159820305"
                                 alt="Experience section"><span>Experience</span>
                         </li>
                     </a>
-                    <a (click)="goToSection(2)">
+                    <a (click)="goToSection(2)" href="">
                         <li><img src="https://ik.imagekit.io/ricardo5ro/icons/right-arrow.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676159820305" alt="Projects section"><span>Projects</span>
                         </li>
                     </a>
-                    <a (click)="goToSection(3)">
+                    <a (click)="goToSection(3)" href="">
                         <li><img src="https://ik.imagekit.io/ricardo5ro/icons/right-arrow.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676159820305" alt="About section"><span>About</span>
                         </li>
                     </a>
-                    <a (click)="goToSection(4)">
+                    <a (click)="goToSection(4)" href="">
                         <li><img src="https://ik.imagekit.io/ricardo5ro/icons/right-arrow.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676159820305" alt="Contact section"><span>Contact</span>
                         </li>
                     </a>
@@ -40,10 +44,10 @@
     <header class="header">
         <img class="logo" src="https://ik.imagekit.io/ricardo5ro/logo/100w.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676159820170" alt="Ricardo's Logo">
         <nav class="navbar">
-            <a (click)="goToSection(1)">Experience</a>
-            <a (click)="goToSection(2)">Projects</a>
-            <a (click)="goToSection(3)">About</a>
-            <a (click)="goToSection(4)">Contact</a>
+            <a (click)="goToSection(1)" href="">Experience</a>
+            <a (click)="goToSection(2)" href="">Projects</a>
+            <a (click)="goToSection(3)" href="">About</a>
+            <a (click)="goToSection(4)" href="">Contact</a>
             <button type="button" (click)="sideMenu()"><img class="menuIcon" src="https://ik.imagekit.io/ricardo5ro/icons/menu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676159820197"></button>
         </nav>
     </header>
@@ -78,8 +82,8 @@
     </main>
     <footer class="homeFooter">
         <div class="bounce">
-            <a (click)="nextSection()"><p>Experience</p></a>
-            <a (click)="nextSection()"><img src="https://ik.imagekit.io/ricardo5ro/icons/down-arrow.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676159820126" alt="Scroll Down"></a>
+            <a (click)="nextSection()" href=""><p>Experience</p></a>
+            <a (click)="nextSection()" href=""><img src="https://ik.imagekit.io/ricardo5ro/icons/down-arrow.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676159820126" alt="Scroll Down"></a>
         </div>
     </footer>
 </section>
