@@ -46,6 +46,7 @@
                   "maximumError": "1mb"
                 }
               ],
+              "optimization": true,
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
