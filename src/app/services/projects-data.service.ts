@@ -23,8 +23,10 @@ export class ProjectsDataService {
         'https://ik.imagekit.io/ricardo5ro/projects/site.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676159821723', [
         new Technology('Angular', 'https://ik.imagekit.io/ricardo5ro/technologies/angular.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676159821725'),
         new Technology('TailwindCSS', 'https://ik.imagekit.io/ricardo5ro/technologies/tailwindcss.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676159821496')],
+        'https://r-oliveira.live/',
+        'https://github.com/ricardoliveira5ro/ricardoliveira5ro.github.io',
         true),
-      new Project(2,'Expense Tracker', 'TRACKER:  An idea in progress...', [], 'https://ik.imagekit.io/ricardo5ro/projects/coming_soon.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676159821477', [], false)
+      new Project(2,'Expense Tracker', 'TRACKER:  An idea in progress...', [], 'https://ik.imagekit.io/ricardo5ro/projects/coming_soon.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676159821477', [], '', '', false)
     ]
 
     return list;
