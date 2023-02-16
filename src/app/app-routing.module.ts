@@ -8,13 +8,13 @@ import { ProjectsDetailComponent } from './projects-detail/projects-detail.compo
 import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'projects/:id', component: ProjectsDetailComponent },
   { path: 'about-me', component: AboutComponent },
   { path: 'contacts', component: ContactsComponent },
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({
