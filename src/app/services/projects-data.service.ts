@@ -26,7 +26,20 @@ export class ProjectsDataService {
         'https://r-oliveira.live/',
         'https://github.com/ricardoliveira5ro/ricardoliveira5ro.github.io',
         true),
-      new Project(2,'Expense Tracker', 'TRACKER:  An idea in progress...', [], 'https://ik.imagekit.io/ricardo5ro/projects/coming_soon.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1676159821477', [], '', '', false)
+      new Project(2,'Absences API',
+        'RESTfull .NET Web API representing a simple absence management system', [
+          'A simple absence management system, that can be integrated as a back-end software. Manage employee`s information, absences and custom statistics.',
+          'C# .NET RESTfull Web API, with all CRUD operations (HTTP requests)',
+          'Used Entity framework, SQL Server and Repository Pattern for database context and manipulation',
+          'DTOs and AutoMapper according to each request with exception handler and validators for input',
+          'Built locally only, the source code is available on GitHub and can be cloned, used and modified'
+        ],
+        'https://ik.imagekit.io/ricardo5ro/projects/AbsencesAPI.png?updatedAt=1679652954842', [
+          new Technology('C#', 'https://ik.imagekit.io/ricardo5ro/technologies/csharp.png?updatedAt=1679653322122'),
+          new Technology('.NET', 'https://ik.imagekit.io/ricardo5ro/technologies/dotNetCore.png?updatedAt=1679653618365')],
+        '',
+        'https://github.com/ricardoliveira5ro/AbsencesAPI',
+        true)
     ]
 
     return list;
